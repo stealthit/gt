@@ -620,6 +620,10 @@ button.btn-green {
           justify-content: center;
 }
 
+.floating-counsel.on {
+  display: none;
+}
+
 .floating-counsel-info {
   position: relative;
   width: 1150px;

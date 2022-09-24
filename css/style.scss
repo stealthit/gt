@@ -459,7 +459,8 @@ button.btn-green {
   background-color: #111d47;
   display: flex;
   justify-content: center;
-
+ 
+  &.on {display: none;}
   &-info {
     position: relative;
     width: $main_width;

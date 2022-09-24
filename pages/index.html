@@ -238,20 +238,20 @@
 <script src="../scripts/jquery-ui.min.js"></script>
 <script src="../scripts/script.js"></script>
 <script>
-  // var $w = $(window),
-  //   footerHei = $('.footer').outerHeight(),
-  //   $banner = $('.floating-counsel');
+  var $w = $(window),
+    footerHei = $('.footer').outerHeight(),
+    $banner = $('.floating-counsel');
 
-  //   $(window).on('scroll', function() {
+  $w.on('scroll', function() {
 
-  //   var sT = $w.scrollTop();    
-  //   var val = $(document).height() - $w.height() - footerHei;
+    var sT = $w.scrollTop();    
+    var val = $(document).height() - $w.height() - footerHei;
 
-  //   if (sT >= val)
-  //       $banner.css('bottom', '310px');
-  //   else
-  //   	$banner.css('bottom', '0');
+    if (sT >= val)
+        $banner.addClass('on')
+    else
+    	$banner.removeClass('on')
 
-  // });
+  });
 </script>
 </html>
