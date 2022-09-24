@@ -230,7 +230,7 @@ button.btn-green {
 
     &.section05 {
       height: 395px;
-      background: navy;
+      background: url(../assets/img_service_bg.jpg) no-repeat center /cover;
       .section05-img {
         width: $main_width;
         display: flex;

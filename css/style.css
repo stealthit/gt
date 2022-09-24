@@ -324,7 +324,7 @@ button.btn-green {
 
 .main-wrapper section.section05 {
   height: 395px;
-  background: navy;
+  background: url(../assets/img_service_bg.jpg) no-repeat center/cover;
 }
 
 .main-wrapper section.section05 .section05-img {
