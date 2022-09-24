@@ -1,0 +1,13 @@
+$main_width: 1150px;
+
+@mixin flex_center() {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+@mixin space_between() {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
