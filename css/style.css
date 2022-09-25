@@ -1,6 +1,12 @@
 @import url("reset.css");
 @import url("common.css");
 .header-wrapper {
+  width: 100%;
+  position: fixed;
+  top: 0;
+  left: 0;
+  z-index: 2;
+  background: #fff;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -88,6 +94,10 @@ button.btn-green {
   font-weight: bold;
   text-align: center;
   color: #fff;
+}
+
+.main-wrapper {
+  margin-top: 100px;
 }
 
 .main-wrapper section {
