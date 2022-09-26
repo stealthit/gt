@@ -58,14 +58,7 @@
     }
   }
 }
-button.btn-green {
-  padding: 15px 80px 17px;
-  background-color: #0bc890;
-  font-size: 16px;
-  font-weight: bold;  
-  text-align: center;
-  color: #fff;
-}
+
 .main-wrapper {
   margin-top: 100px;
   section {
@@ -127,6 +120,11 @@ button.btn-green {
       height: 500px;
       padding-top: 109px;
       padding-bottom: 105px;
+
+      &.section11 {
+        background: url(../assets/main_banner.png) no-repeat center /cover;       
+        height: 800px; 
+      }
   
       .section01-img {
         width: $main_width;      
@@ -164,10 +162,6 @@ button.btn-green {
         width: $main_width;
         height: 510px;
         margin: 80px 0 40px;
-      }
-      .btn-group {
-        display: flex;
-        gap: 16px;
       }
     }
 
@@ -444,19 +438,6 @@ button.btn-green {
   }
 }
 
-.btn-question {
-  position: fixed;
-  right: calc(50% - 575px);
-  bottom: 340px;  
-  border-radius: 100%;
-  width: 60px;
-  height: 60px;  
-  padding: 18.4px 18.2px 18px 18.2px;
-  box-shadow: 0 3px 10px 0 rgba(0, 0, 0, 0.16);
-  border: solid 1px #eee;
-  background-color: #fff;
-}
-
 .floating-counsel {
   width: 100%;
   position: fixed;
@@ -509,4 +490,19 @@ button.btn-green {
     }
 
   }
+}
+
+// modal
+.modal-counsel {
+  width: 400px;
+  // height: 214px;
+  
+  p.desc {
+    margin-top: 40px;
+    margin-bottom: 20px;
+    font-size: 14px;    
+    color: #111;      
+  }
+
+  .email,.kakao {display: none;}
 }

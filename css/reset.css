@@ -85,7 +85,7 @@ footer, header, hgroup, menu, nav, section {
 	display: block;
 }
 html { line-height: 1.5; -webkit-text-size-adjust: 100%; -moz-tab-size: 4; tab-size: 4; font-family: "Noto Sans KR", sans-serif; height: 100%; } 
-body { margin: 0; line-height: inherit; font-size: 14px; height: 100%; } 
+body { margin: 0; line-height: inherit; font-size: 14px; height: 100%; overflow: overlay;} 
 ol, ul, details, summary {
 	list-style: none;
 }
@@ -167,7 +167,7 @@ input[type="number"],
 input[type="text"],
 input[type="password"],
 input[type="url"],
-input[type="email"],
+/* input[type="email"], */
 input[type="tel"],
 input[type="date"], 
 textarea { -webkit-appearance:none; -moz-appearance:none; appearance:none; border-radius:0; outline:0;}
