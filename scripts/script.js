@@ -13,3 +13,8 @@ $("#modal-background, .close").on('click',function(){
     $('body').css('overflow', 'overlay');
   }
 });
+
+$("ul.tab-menu li").on('click',function(){
+  $(this).addClass('active').siblings().removeClass('active');  
+})
+

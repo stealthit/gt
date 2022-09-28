@@ -144,10 +144,14 @@ ul.tab-menu {
 }
 
 ul.tab-menu li {
+  cursor: pointer;
   height: var(--font-size-40);
   font-size: var(--font-size-16);
   font-weight: bold;
   text-align: center;
+}
+
+ul.tab-menu li.active {
   color: #2e3666;
   border-bottom: 3px solid transparent;
   border-radius: 50%;

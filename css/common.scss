@@ -101,15 +101,20 @@ ul.tab-menu {
   height: var(--font-size-40);
   border-bottom: 1px solid #ccc;
   li {
+    cursor: pointer;
     height: var(--font-size-40);
     font-size: var(--font-size-16);
     font-weight: bold;    
     text-align: center;
-    color: #2e3666;
-    border-bottom: 3px solid transparent;
-    border-radius: 50%;
-    border-image: linear-gradient(to right, #0bc890 0%, #2299f4 100%);
-    border-image-slice: 1;
+
+    &.active {
+      color: #2e3666;
+      border-bottom: 3px solid transparent;
+      border-radius: 50%;
+      border-image: linear-gradient(to right, #0bc890 0%, #2299f4 100%);
+      border-image-slice: 1;
+    }
+
   }
 }
 
