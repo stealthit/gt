@@ -434,6 +434,9 @@
           .ic-open-arrow {            
             transform: rotateX(180deg);
           }
+          .ic-question {
+            content: url("../assets/ic_faq_q_s.png");                       
+          }
         }
         summary {
           background: #fff;

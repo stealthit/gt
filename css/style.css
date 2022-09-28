@@ -567,6 +567,10 @@
           transform: rotateX(180deg);
 }
 
+.question-wrapper .question-list ul li details[open] .ic-question {
+  content: url("../assets/ic_faq_q_s.png");
+}
+
 .question-wrapper .question-list ul li details summary {
   background: #fff;
   height: var(--size-80);
