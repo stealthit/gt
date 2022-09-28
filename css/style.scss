@@ -3,63 +3,6 @@
 @import url("common.css");
 
 //** Main *********
-.header-wrapper {
-  width: 100%;
-  position: fixed;
-  top: 0;
-  left: 0;
-  z-index: 2;
-  background: #fff;
-  @include flex_center;
-  .top-menu-wrapper {
-    width: $main_width;
-    height: 6.25rem;
-
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-    gap: 11.25rem;
-
-    .header-logo {
-      img {
-        content: url(../assets/img_top_logo.png);
-      }
-    }
-
-    ul.menu-main {
-      display: flex;
-      gap: 2.5rem;
-
-      font-size: var(--font-size-17);
-      font-weight: bold;
-      color: #2e3666;
-
-      li.active {color: #1ea5d2}
-    }
-    ul.menu-join {
-      display: flex;
-      gap: var(--font-size-16);
-      li a{
-        display: flex;
-        flex-direction: column;
-        align-items: center;
-        gap: 0.4375rem;
-        font-size: var(--font-size-14);
-        font-weight: 500;        
-        line-height: 1.2;        
-        text-align: center;
-        color: #555;
-
-        img {
-          width: var(--font-size-20);
-          height: var(--font-size-20);
-        }
-        &.v-seperate {width: 1px; background-color: #e5e5e5;}
-      }
-    }
-  }
-}
-
 .main-wrapper {
   margin-top: 6.25rem;
   section {
@@ -343,6 +286,7 @@
         border-radius: 3px;
         background-color: #0bc890;
 
+        img {height: 12.5rem;}
         .counsel-info-cont {
           padding-left: 2.1875rem;
           padding-right: 7.6875rem;
@@ -395,50 +339,6 @@
   }
 }
 
-.footer {
-  height: 19.375rem;
-  background-color: #1c2338;
-  display: flex;
-  justify-content: center;  
-  font-size: var(--font-size-14);        
-  line-height: 1.86;                
-  color: #fff;
-  
-  .footer-inner {
-    width: $main_width;
-    display: flex;
-    gap: 8.375rem;    
-    margin-top: var(--size-60);
-    opacity: 0.8;        
-    .footer-right {
-      ul.footer-menu {
-        display: flex;
-
-        li {
-          position: relative;
-          padding: 0 var(--font-size-10);
-          &:first-child {padding-left: 0;}
-          &:not(:first-child):before {
-            content: "";
-            position: absolute;
-            top: var(--size-5);
-            left: 0;
-            bottom: var(--size-5);
-            border-left: 1px solid #fff;
-          }
-        }
-      }
-      .footer-info {
-        padding: var(--font-size-20) 0 var(--font-size-30) 0;
-      }
-      .footer-sns {
-        display: flex;
-        gap: var(--font-size-10);
-      }
-    }
-  }
-}
-
 .floating-counsel {
   width: 100%;
   position: fixed;
@@ -459,6 +359,7 @@
       position: absolute;
       bottom: 1.3125rem;
       left: 0;
+      img {width: 7rem;}
     }
     .info-wrap {
       padding-left: 8.875rem;
