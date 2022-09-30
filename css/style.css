@@ -1,9 +1,5 @@
 @import url("reset.css");
 @import url("common.css");
-.main-wrapper {
-  margin-top: 6.25rem;
-}
-
 .main-wrapper section {
   display: -webkit-box;
   display: -ms-flexbox;
@@ -615,5 +611,173 @@
   font-size: var(--font-size-14);
   line-height: 1.86;
   color: #666;
+}
+
+.privacy-wrapper {
+  margin: 0 auto;
+  margin-bottom: 6.25rem;
+  padding-top: var(--font-size-30);
+  width: 71.875rem;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  gap: var(--font-size-30);
+}
+
+.privacy-wrapper .select-wrap {
+  width: 200px;
+}
+
+.privacy-wrapper .terms-box {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  gap: var(--font-size-30);
+}
+
+.privacy-wrapper .terms-box .article {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  gap: var(--font-size-20);
+}
+
+.privacy-wrapper .terms-box .article ol.article-list {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  gap: var(--font-size-10);
+}
+
+.privacy-wrapper .terms-box .article ol.article-list li p.article-text {
+  font-size: var(--font-size-16);
+  line-height: 1.88;
+  color: #666;
+}
+
+.login-wrapper {
+  height: 100%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  min-height: 43.5625rem;
+}
+
+.login-wrapper .login-inner {
+  width: var(--size-400);
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  gap: var(--font-size-30);
+}
+
+.login-wrapper .login-inner .login-box {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  gap: var(--font-size-20);
+}
+
+.login-wrapper .login-inner .login-box ul.tab-menu {
+  height: var(--size-56);
+  gap: 0;
+}
+
+.login-wrapper .login-inner .login-box ul.tab-menu li {
+  height: var(--size-56);
+  width: var(--size-200);
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  color: #111;
+}
+
+.login-wrapper .login-inner .login-box .btn-login {
+  width: var(--size-400);
+  height: var(--size-56);
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  background-color: #0bc890;
+  font-size: var(--font-size-16);
+  font-weight: bold;
+  text-align: center;
+  color: #fff;
+}
+
+.login-wrapper .login-inner .login-box p {
+  font-size: var(--font-size-14);
+  color: #666;
+}
+
+.login-wrapper .login-inner ul.login-find {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  gap: var(--font-size-10);
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  font-size: var(--font-size-13);
+  color: #999;
+}
+
+.login-wrapper .login-inner ul.login-find li.v-seperate {
+  border: 0.3125rem solid #fff;
+  width: 1px;
+  background-color: #ccc;
+}
+
+.modal-completed {
+  width: var(--size-280);
+}
+
+.modal-completed p.desc {
+  text-align: center;
+  margin-top: var(--font-size-40);
+  font-size: var(--font-size-14);
+  color: #111;
 }
 /*# sourceMappingURL=style.css.map */

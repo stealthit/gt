@@ -48,11 +48,18 @@
   --size-11: 0.6875rem;
   --size-17: 1.0625rem;
   --size-48: 3rem;
+  --size-50: 3.125rem;
+  --size-56: 3.5rem;
   --size-60: 3.75rem;
   --size-80: 5rem;
   /*80px*/
+  --size-140: 8.75rem;
+  --size-150: 9.375rem;
   --size-195: 12.1875rem;
+  --size-200: 12.5rem;
+  --size-280: 17.5rem;
   --size-395: 24.6875rem;
+  --size-400: 25rem;
   --size-450: 28.125rem;
 }
 
@@ -67,7 +74,19 @@ h2 {
   color: #2e3666;
 }
 
-input {
+h4 {
+  font-size: var(--font-size-16);
+  font-weight: normal;
+  font-stretch: normal;
+  font-style: normal;
+  line-height: 1.88;
+  letter-spacing: normal;
+  text-align: left;
+  color: #666;
+}
+
+input[type="email"], input[type="password"], input[type="text"], input[type="tel"] {
+  width: 100%;
   padding: var(--font-size-14) var(--font-size-16);
   border: solid 1px #ccc;
   background-color: #fff;
@@ -89,6 +108,77 @@ input::-ms-input-placeholder {
 
 input::placeholder {
   color: #ccc;
+}
+
+.btn-check-group {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+}
+
+.btn-check-group > input[type="checkbox"] {
+  display: none;
+}
+
+.btn-check-group > input[type="checkbox"] + label {
+  width: 100px;
+  height: 30px;
+  display: inline-block;
+  padding: 4px 12px 6px;
+  border-radius: 4px;
+  border: 1px solid #ccc;
+  font-size: 14px;
+  text-align: center;
+  color: #111;
+  cursor: pointer;
+  background: #fff;
+}
+
+input[type="checkbox"] {
+  -webkit-appearance: none;
+     -moz-appearance: none;
+          appearance: none;
+  position: relative;
+  width: 26px;
+  height: 26px;
+  cursor: pointer;
+  outline: none !important;
+  border: 1px solid #ccc;
+  background: white;
+}
+
+input[type="checkbox"]::before {
+  content: url("../assets/bt_checkbox_s.png");
+  background-color: transparent;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  overflow: hidden;
+  -webkit-transform: scale(0) translate(-50%, -50%);
+          transform: scale(0) translate(-50%, -50%);
+  line-height: 1;
+}
+
+input[type="checkbox"]:hover {
+  border: solid 1px #8995a9;
+  background: #fff;
+}
+
+input[type="checkbox"]:checked::before {
+  -webkit-transform: scale(1) translate(-50%, -50%);
+          transform: scale(1) translate(-50%, -50%);
+}
+
+.checkbox-wrap {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  gap: var(--font-size-10);
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  font-size: var(--font-size-14);
+  color: #222;
 }
 
 button.btn-green {
@@ -147,11 +237,12 @@ ul.tab-menu li {
   cursor: pointer;
   height: var(--font-size-40);
   font-size: var(--font-size-16);
-  font-weight: bold;
   text-align: center;
+  color: #666;
 }
 
 ul.tab-menu li.active {
+  font-weight: bold;
   color: #2e3666;
   border-bottom: 3px solid transparent;
   border-radius: 50%;
@@ -159,6 +250,48 @@ ul.tab-menu li.active {
      border-image: -webkit-gradient(linear, left top, right top, from(#0bc890), to(#2299f4));
      border-image: linear-gradient(to right, #0bc890 0%, #2299f4 100%);
   border-image-slice: 1;
+}
+
+select, select.select-box {
+  -webkit-appearance: none;
+     -moz-appearance: none;
+          appearance: none;
+  border: none;
+  cursor: pointer;
+  width: calc(100% - 2px);
+  height: calc(100% - 2px);
+  text-overflow: ellipsis;
+  background: url(../assets/ic_banner_arrow.png) no-repeat center right 16px;
+  background-size: 12px 8px;
+  background-color: white;
+  padding: 0 15px;
+  font-size: var(--font-size-14);
+  line-height: 1.2;
+  color: #111;
+}
+
+.select-wrap {
+  min-width: var(--size-140);
+  height: var(--size-48);
+  border: solid 1px #ccc;
+  background-color: #fff;
+}
+
+.input-box {
+  width: 100%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  gap: var(--font-size-10);
+}
+
+.input-box .msg-box {
+  font-size: var(--font-size-13);
+  color: #fd345d;
 }
 
 #modal-background {
@@ -220,6 +353,7 @@ ul.tab-menu li.active {
   left: 0;
   z-index: 2;
   background: #fff;
+  border-bottom: 1px solid #e5e5e5;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -271,6 +405,11 @@ ul.tab-menu li.active {
   gap: var(--font-size-16);
 }
 
+.header-wrapper .top-menu-wrapper ul.menu-join li.v-seperate {
+  width: 1px;
+  background-color: #e5e5e5;
+}
+
 .header-wrapper .top-menu-wrapper ul.menu-join li a {
   display: -webkit-box;
   display: -ms-flexbox;
@@ -295,11 +434,6 @@ ul.tab-menu li.active {
   height: var(--font-size-20);
 }
 
-.header-wrapper .top-menu-wrapper ul.menu-join li a.v-seperate {
-  width: 1px;
-  background-color: #e5e5e5;
-}
-
 .footer {
   height: 19.375rem;
   background-color: #1c2338;
@@ -321,6 +455,7 @@ ul.tab-menu li.active {
   display: flex;
   gap: 8.375rem;
   margin-top: var(--size-60);
+  margin-bottom: var(--size-50);
   opacity: 0.8;
 }
 
@@ -357,6 +492,21 @@ ul.tab-menu li.active {
   display: -ms-flexbox;
   display: flex;
   gap: var(--font-size-10);
+}
+
+.main {
+  height: 100vh;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  padding-top: 6.25rem;
 }
 
 @media (max-width: 1279px) {
