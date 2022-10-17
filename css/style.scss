@@ -797,7 +797,7 @@ button {
 
     > a {
       display: inline-block;
-      width:$size-16;
+      width: $size-16;
       margin: $size-40 0;
       img {
         content: url(#{$imgPath}ic_title_back.png);
@@ -834,9 +834,17 @@ button {
         height: $size-48;
         @include flex_center();
         gap: $size-10;
-        &:first-child {
+
+        &.btn-recommend {
           img {
             content: url(#{$imgPath}ic_like_n.png);
+          }
+          &.active {
+            img {
+              content: url(#{$imgPath}ic_like_s.png);
+            }
+            border-color: #2299f4;
+            color: #2299f4;
           }
         }
         &:last-child {
@@ -856,7 +864,7 @@ button {
       }
       .insdtl-img-wrap {
         margin: 0 auto;
-        width:$size-700;
+        width: $size-700;
         img {
           content: url(#{$imgPath}insdtl-img.png);
         }
@@ -865,7 +873,7 @@ button {
     .insdtl-foot {
       display: flex;
       align-items: flex-start;
-      gap:$size-92;
+      gap: $size-92;
       padding-top: $size-37;
       .insdtl-foot-profile {
         @include flex_center();
@@ -882,20 +890,109 @@ button {
           font-weight: bold;
           color: #111;
         }
-        .pro-email{
+        .pro-email {
           font-size: $size-14;
           color: #aaa;
         }
       }
       .insdtl-foot-cont {
         @include flex_center();
-        gap:$size-103;
-        li{
+        gap: $size-103;
+        li {
           font-size: $size-15;
           font-weight: 500;
           color: #666;
         }
       }
+    }
+  }
+}
+
+// modal-share
+
+.modal-share {
+  width: $size-344;
+  height: $size-276;
+  padding-top: $size-38;
+  padding-bottom: $size-30;
+  border: solid 1px #111;
+
+  .share-wrap {
+    @include flex_center();
+    gap: $size-30 $size-20;
+    flex-wrap: wrap;
+    li {
+      display: flex;
+      flex-direction: column;
+      gap: $size-4;
+      align-items: center;
+      width: $size-48;
+      p {
+        font-size: $size-13;
+        color: #111;
+      }
+      div {
+        width: $size-36;
+        height: $size-36;
+      }
+    }
+  }
+  .btn {
+    &-kakao {
+      img {
+        content: url(#{$imgPath}ic_share_kakao.png);
+      }
+    }
+    &-facebook {
+      img {
+        content: url(#{$imgPath}ic_share_facebook.png);
+      }
+    }
+    &-twitter {
+      img {
+        content: url(#{$imgPath}ic_share_twitter.png);
+      }
+    }
+    &-band {
+      img {
+        content: url(#{$imgPath}ic_share_band.png);
+      }
+    }
+    &-line {
+      img {
+        content: url(#{$imgPath}ic_share_line.png);
+      }
+    }
+    &-blog {
+      img {
+        content: url(#{$imgPath}ic_share_blog.png);
+      }
+    }
+    &-tstory {
+      img {
+        content: url(#{$imgPath}ic_share_tstory.png);
+      }
+    }
+    &-brunch {
+      img {
+        content: url(#{$imgPath}ic_share_brunch.png);
+      }
+    }
+  }
+  .search-wrap {
+    display: flex;
+    margin-top: $size-20;
+    input{
+      width:$size-198;
+    }
+    .btn-url {
+      width: $size-86;
+      height: $size-48;
+      background-color: #0bc890;
+      font-size: $size-14;
+      font-weight: bold;
+      color: #fff;
+      @include flex_center();
     }
   }
 }

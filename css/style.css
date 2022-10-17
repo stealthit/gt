@@ -179,7 +179,9 @@ button.btn-ic-search::before { content: url(../assets/ic_search.png); width: 1.1
 .insight-detail-wrapper .insight-dtl-inner .insdtl-tit span { font-size: 0.8125rem; color: #aaa; }
 .insight-detail-wrapper .insight-dtl-inner .insdtl-btn-wrap { display: -webkit-box; display: -ms-flexbox; display: flex; -webkit-box-align: center; -ms-flex-align: center; align-items: center; -webkit-box-pack: justify; -ms-flex-pack: justify; justify-content: space-between; gap: 0.625rem; }
 .insight-detail-wrapper .insight-dtl-inner .insdtl-btn-wrap button { border: solid 1px #ccc; background-color: #fff; width: 5.5625rem; height: 3rem; display: -webkit-box; display: -ms-flexbox; display: flex; -webkit-box-align: center; -ms-flex-align: center; align-items: center; -webkit-box-pack: center; -ms-flex-pack: center; justify-content: center; gap: 0.625rem; }
-.insight-detail-wrapper .insight-dtl-inner .insdtl-btn-wrap button:first-child img { content: url(../assets/ic_like_n.png); }
+.insight-detail-wrapper .insight-dtl-inner .insdtl-btn-wrap button.btn-recommend img { content: url(../assets/ic_like_n.png); }
+.insight-detail-wrapper .insight-dtl-inner .insdtl-btn-wrap button.btn-recommend.active { border-color: #2299f4; color: #2299f4; }
+.insight-detail-wrapper .insight-dtl-inner .insdtl-btn-wrap button.btn-recommend.active img { content: url(../assets/ic_like_s.png); }
 .insight-detail-wrapper .insight-dtl-inner .insdtl-btn-wrap button:last-child img { content: url(../assets/ic_share.png); }
 .insight-detail-wrapper .insight-dtl-inner .insdtl-cont { border-bottom: 1px solid #cccccc; padding: 1.25rem 0 1.875rem; }
 .insight-detail-wrapper .insight-dtl-inner .insdtl-cont p { font-size: 1rem; color: #666; margin-bottom: 1.875rem; }
@@ -193,5 +195,22 @@ button.btn-ic-search::before { content: url(../assets/ic_search.png); width: 1.1
 .insight-detail-wrapper .insight-dtl-inner .insdtl-foot .insdtl-foot-profile .pro-email { font-size: 0.875rem; color: #aaa; }
 .insight-detail-wrapper .insight-dtl-inner .insdtl-foot .insdtl-foot-cont { display: -webkit-box; display: -ms-flexbox; display: flex; -webkit-box-align: center; -ms-flex-align: center; align-items: center; -webkit-box-pack: center; -ms-flex-pack: center; justify-content: center; gap: 6.4375rem; }
 .insight-detail-wrapper .insight-dtl-inner .insdtl-foot .insdtl-foot-cont li { font-size: 0.9375rem; font-weight: 500; color: #666; }
+
+.modal-share { width: 21.5rem; height: 17.25rem; padding-top: 2.375rem; padding-bottom: 1.875rem; border: solid 1px #111; }
+.modal-share .share-wrap { display: -webkit-box; display: -ms-flexbox; display: flex; -webkit-box-align: center; -ms-flex-align: center; align-items: center; -webkit-box-pack: center; -ms-flex-pack: center; justify-content: center; gap: 1.875rem 1.25rem; -ms-flex-wrap: wrap; flex-wrap: wrap; }
+.modal-share .share-wrap li { display: -webkit-box; display: -ms-flexbox; display: flex; -webkit-box-orient: vertical; -webkit-box-direction: normal; -ms-flex-direction: column; flex-direction: column; gap: 0.25rem; -webkit-box-align: center; -ms-flex-align: center; align-items: center; width: 3rem; }
+.modal-share .share-wrap li p { font-size: 0.8125rem; color: #111; }
+.modal-share .share-wrap li div { width: 2.25rem; height: 2.25rem; }
+.modal-share .btn-kakao img { content: url(../assets/ic_share_kakao.png); }
+.modal-share .btn-facebook img { content: url(../assets/ic_share_facebook.png); }
+.modal-share .btn-twitter img { content: url(../assets/ic_share_twitter.png); }
+.modal-share .btn-band img { content: url(../assets/ic_share_band.png); }
+.modal-share .btn-line img { content: url(../assets/ic_share_line.png); }
+.modal-share .btn-blog img { content: url(../assets/ic_share_blog.png); }
+.modal-share .btn-tstory img { content: url(../assets/ic_share_tstory.png); }
+.modal-share .btn-brunch img { content: url(../assets/ic_share_brunch.png); }
+.modal-share .search-wrap { display: -webkit-box; display: -ms-flexbox; display: flex; margin-top: 1.25rem; }
+.modal-share .search-wrap input { width: 12.375rem; }
+.modal-share .search-wrap .btn-url { width: 5.375rem; height: 3rem; background-color: #0bc890; font-size: 0.875rem; font-weight: bold; color: #fff; display: -webkit-box; display: -ms-flexbox; display: flex; -webkit-box-align: center; -ms-flex-align: center; align-items: center; -webkit-box-pack: center; -ms-flex-pack: center; justify-content: center; }
 
 /*# sourceMappingURL=style.css.map */
