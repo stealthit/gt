@@ -47,7 +47,7 @@
 }
 
 h2 {
-  font-size: var(--font-size-32);
+  font-size: $size-32;
   font-weight: bold;
   font-stretch: normal;
   font-style: normal;
@@ -57,7 +57,7 @@ h2 {
   color: #2e3666;
 }
 h4 {
-  font-size: var(--font-size-16);
+  font-size: $size-16;
   font-weight: normal;
   font-stretch: normal;
   font-style: normal;
@@ -69,10 +69,10 @@ h4 {
 // input
 input[type="email"], input[type="password"],input[type="text"],input[type="tel"] {
   width: 100%;
-  padding: var(--font-size-14) var(--font-size-16);
+  padding: $size-14 $size-16;
   border: solid 1px #ccc;
   background-color: #fff;
-  font-size: var(--font-size-14);  
+  font-size: $size-14;
   line-height: 1.2;      
 }
 input::placeholder {color: #ccc;}
@@ -154,17 +154,17 @@ input[type="checkbox"] {
 
 .checkbox-wrap {
   display: flex;
-  gap: var(--font-size-10);
+  gap: $size-10;
   align-items: center;
 
-  font-size: var(--font-size-14);  
+  font-size: $size-14;
   color: #222;
 }
 // button
 button.btn-green {
-  padding: var(--font-size-15) var(--size-80) var(--size-17);
+  padding: $size-15 $size-80 $size-17;
   background-color: #0bc890;
-  font-size: var(--font-size-16);
+  font-size: $size-16;
   font-weight: bold;  
   text-align: center;
   color: #fff;
@@ -174,8 +174,8 @@ button.btn-green {
   right: calc(50% - 35.9375rem);
   bottom: 21.25rem;  /*340px*/
   border-radius: 100%;
-  width: var(--size-60);
-  height: var(--size-60);  
+  width: $size-60;
+  height: $size-60;
   padding: 1.15rem 1.1375rem 1.125rem 1.1375rem;
   box-shadow: 0 3px 10px 0 rgba(0, 0, 0, 0.16);
   border: solid 1px #eee;
@@ -185,26 +185,26 @@ button.btn-green {
 // button-group
 .btn-group {
   display: flex;
-  gap: var(--font-size-16);
+  gap: $size-16;
 }
 .btn-sgroup {
   display: flex;
   justify-content: center;
   gap: 0.5rem;
-  margin-top: var(--font-size-30);
-  margin-bottom: var(--font-size-20);
+  margin-top: $size-30;
+  margin-bottom: $size-20;
 }
 
 // tab-menu
 ul.tab-menu {
   display: flex;
-  gap: var(--font-size-30);
-  height: var(--font-size-40);
+  gap: $size-30;
+  height: $size-40;
   border-bottom: 1px solid #ccc;
   li {
     cursor: pointer;
-    height: var(--font-size-40);
-    font-size: var(--font-size-16);
+    height: $size-40;
+    font-size: $size-16;
     text-align: center;
     color: #666;
 
@@ -233,14 +233,14 @@ select, select.select-box {
   background-size: 12px 8px;  
   background-color: white;
   padding: 0 15px;  
-  font-size: var(--font-size-14);  
+  font-size: v$size-14;
   line-height: 1.2;  
   color: #111;
 }
 
 .select-wrap {
-  min-width: var(--size-140);
-  height: var(--size-48);
+  min-width: $size-140;
+  height: $size-48;
   border: solid 1px #ccc;  
   background-color: #fff;
 }
@@ -249,10 +249,10 @@ select, select.select-box {
   width: 100%;
   display: flex;
   flex-direction: column;
-  gap: var(--font-size-10);
+  gap: $size-10;
 
   .msg-box {
-    font-size: var(--font-size-13);          
+    font-size: $size-13; 
     color: #fd345d;
   }
 }
@@ -277,7 +277,7 @@ select, select.select-box {
   transform: translate(-50%, -50%);
   background: #fff;
 
-  padding: 0 var(--font-size-30);
+  padding: 0 $size-30;
   box-shadow: 0 2px 10px 0 rgba(0, 0, 0, 0.1);  
   // display: flex;
   flex-direction: column;
@@ -291,7 +291,7 @@ select, select.select-box {
     padding: 0.5625rem 1.75rem 0.5rem;
     border: solid 1px #ccc;
     background-color: #fff;
-    font-size: var(--font-size-13);    
+    font-size: $size-13;
     text-align: center;
     color: #111;
   
@@ -299,7 +299,7 @@ select, select.select-box {
   .btn-modal-blue {
     padding: 0.5625rem 1.75rem 0.5rem;
     background-color: #2299f4;
-    font-size: var(--font-size-13);    
+    font-size: $size-13;  
     text-align: center;
     color: #fff;
   }
@@ -333,7 +333,7 @@ select, select.select-box {
       display: flex;
       gap: 2.5rem;
 
-      font-size: var(--font-size-17);
+      font-size: $size-17;
       font-weight: bold;
       color: #2e3666;
 
@@ -341,7 +341,7 @@ select, select.select-box {
     }
     ul.menu-join {
       display: flex;
-      gap: var(--font-size-16);
+      gap: $size-16;
       li {
         &.v-seperate {width: 1px; background-color: #e5e5e5;}
         a {
@@ -349,15 +349,15 @@ select, select.select-box {
           flex-direction: column;
           align-items: center;
           gap: 0.4375rem;
-          font-size: var(--font-size-14);
+          font-size: $size-14;
           font-weight: 500;        
           line-height: 1.2;        
           text-align: center;
           color: #555;
 
           img {
-            width: var(--font-size-20);
-            height: var(--font-size-20);
+            width: $size-20;
+            height: $size-20;
           }        
         }
       }
@@ -370,7 +370,7 @@ select, select.select-box {
   background-color: #1c2338;
   display: flex;
   justify-content: center;  
-  font-size: var(--font-size-14);        
+  font-size: $size-14;
   line-height: 1.86;                
   color: #fff;
   
@@ -378,8 +378,8 @@ select, select.select-box {
     width: $main_width;
     display: flex;
     gap: 8.375rem;    
-    margin-top: var(--size-60);
-    margin-bottom: var(--size-50);
+    margin-top: $size-60;
+    margin-bottom: $size-50;
     opacity: 0.8;        
     .footer-right {
       ul.footer-menu {
@@ -387,24 +387,24 @@ select, select.select-box {
 
         li {
           position: relative;
-          padding: 0 var(--font-size-10);
+          padding: 0 $size-10;
           &:first-child {padding-left: 0;}
           &:not(:first-child):before {
             content: "";
             position: absolute;
-            top: var(--size-5);
+            top: $size-5;
             left: 0;
-            bottom: var(--size-5);
+            bottom: $size-5;
             border-left: 1px solid #fff;
           }
         }
       }
       .footer-info {
-        padding: var(--font-size-20) 0 var(--font-size-30) 0;
+        padding: $size-20 0 $size-30 0;
       }
       .footer-sns {
         display: flex;
-        gap: var(--font-size-10);
+        gap: $size-10;
       }
     }
   }
@@ -425,7 +425,7 @@ select, select.select-box {
       ul.menu-main {
         gap: 2rem;
   
-        font-size: var(--font-size-17);
+        font-size: $size-17;
         font-weight: bold;
         color: #2e3666;
   

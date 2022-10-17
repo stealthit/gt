@@ -16,28 +16,28 @@
       flex-direction: column;  
       align-items: center;
       .title {
-        font-size: var(--font-size-32);
+        font-size: $size-32;
         font-weight: bold;      
         text-align: center;
         color: #2e3666;
       }
       .desc {
-        margin-top: var(--font-size-16);        
-        font-size: var(--font-size-20);
+        margin-top: $size-16;        
+        font-size: $size-16;
         text-align: center;
         color: #666;
       }
       .title-line {
         margin-top: 1.8125rem;
-        width: var(--size-80);
-        height: var(--size-6);
+        width: $size-80;
+        height: $size-6;
         background-image: linear-gradient(to right, #2299f4, #0bc890);
       }
     }
 
     ul {      
       display: flex;
-      gap: var(--font-size-26);
+      gap: $size-26;
       
       li {
         display: flex;
@@ -46,13 +46,13 @@
         
         .item-desc {          
           .item-desc-title {
-            font-size: var(--font-size-25);
+            font-size: $size-25;
             font-weight: bold;                            
             color: #111;
           }
           .item-desc-txt {
-            margin-top: var(--size-11);
-            font-size: var(--font-size-16);
+            margin-top: $size-11;
+            font-size: $size-16;
             color: #666;
           }
         }
@@ -74,14 +74,14 @@
         width: $main_width;      
         .section01-title {
           height: 1.8125rem;
-          font-size: var(--font-size-20);        
+          font-size:$size-20;        
           text-align: left;
           color: #fff;
         }
         .section01-desc {
           height: 10.3125rem;
           margin: 0.3125rem 0 2.1875rem;
-          font-size: var(--font-size-62);
+          font-size: $size-62;
           font-weight: bold;        
           line-height: 1.18;        
           color: #fff;      
@@ -90,7 +90,7 @@
           width: 12.75rem;
           height: 3.5rem;                
           border: solid 2px #fff;
-          font-size: var(--font-size-14);
+          font-size: $size-14;
           font-weight: bold;        
           text-align: center;
           color: #fff;
@@ -105,7 +105,7 @@
       .chart-wrapper {
         width: $main_width;
         height: 31.875rem;
-        margin: var(--size-80) 0 var(--font-size-40);
+        margin: $size-80 0 $size-40;
       }
     }
 
@@ -122,7 +122,7 @@
           img {width: 22.75rem;height: 16.25rem;}
     
           .item-desc {
-            padding: var(--font-size-30) var(--font-size-30) 0 var(--font-size-30);          
+            padding: $size-30 $size-30 0 $size-30;          
           }
         }      
       }
@@ -135,8 +135,8 @@
 
       ul {
         width: $main_width;
-        height: var(--size-450);
-        margin-top: var(--size-80);        
+        height: $size-450;
+        margin-top: $size-80;        
 
         li {
           flex-grow:1;
@@ -153,20 +153,20 @@
 
             .item-img-num {              
               position: absolute;
-              width: var(--size-48);
-              height: var(--size-48);   
+              width: $size-48;
+              height: $size-48;   
               border-radius: 100%;
               top: 0;
               right: 0;           
               background-color: #0bc890;
-              font-size: var(--font-size-18);
+              font-size: $size-18;
               font-weight: bold;              
               color: #fff;
               @include flex_center;            
             }
           }
           .item-desc {
-            padding-top: var(--font-size-20);     
+            padding-top: $size-20;     
             .item-desc-txt {text-align: center;}       
           }
         }
@@ -174,7 +174,7 @@
     }
 
     &.section05 {
-      height: var(--size-395);
+      height: $size-395;
       background: url(../assets/img_service_bg.jpg) no-repeat center /cover;
       .section05-inner {
         width: $main_width;
@@ -189,11 +189,11 @@
         }
         .section-right {
           display: flex;
-          gap: var(--font-size-26);
+          gap: $size-26;
 
           ul li {
-            height: var(--size-195);
-            width: var(--size-395);
+            height: $size-195;
+            width: $size-395;
             border: 1px solid rgba(white, 0.5);
             background: transparent;
             display: flex;         
@@ -201,7 +201,7 @@
             align-items: center;
 
             .item-img {
-              margin-left: var(--font-size-62);
+              margin-left: $size-62;
               margin-right: 2.1875rem;
             }
 
@@ -212,17 +212,17 @@
               
               .info-title {
                 position: absolute;
-                top: var(--font-size-42);
+                top: $size-42;
                 left: 0;
 
-                font-size: var(--font-size-22);                
+                font-size: $size-22;                
                 color: #fff;
               }
               .info-count {
                 position: absolute;
-                top: var(--size-60);
+                top: $size-60;
                 left: 0;
-                font-size: var(--size-60);
+                font-size: $size-60;
                 font-weight: bold;                
                 color: #fff;
               }
@@ -238,30 +238,30 @@
       ul {
         width: $main_width;
         height: 13.875rem;
-        margin-top: var(--size-80);
+        margin-top: $size-80;
         margin-bottom: 6.25rem;
 
         li {
-          padding: var(--font-size-30);
+          padding: $size-30;
           border: solid 1px #e5e5e5;
 
           .item-date {
             width: 4.75rem;
-            height: var(--font-size-24);            
+            height: $size-24;            
             padding: 0.1875rem 0.5rem;
             border-radius: 3px;
             background-color: #1ea5d2;
-            font-size: var(--font-size-12);            
+            font-size: $size-12;            
             color: #fff;
           }
           .item-subject {
-            margin: var(--font-size-20) 0;
-            font-size: var(--font-size-25);
+            margin: $size-20 0;
+            font-size: $size-25;
             font-weight: bold;            
             color: #111;          
           }
           .item-more a{
-            font-size: var(--font-size-16);
+            font-size: $size-16;
             font-weight: bold;            
             color: #666;
             display: flex;
@@ -270,8 +270,8 @@
 
             .ic-news-more {
               content: url(../assets/ic_news_more.png);
-              width: var(--font-size-20);
-              height: var(--font-size-20);
+              width: $size-20;
+              height: $size-20;
             }
           }
         }
@@ -282,7 +282,7 @@
         align-items: center;
         width: $main_width;
         height: 12.5rem;
-        padding: 0 var(--size-60) 0 2.375rem;
+        padding: 0 $size-60 0 2.375rem;
         border-radius: 3px;
         background-color: #0bc890;
 
@@ -291,13 +291,13 @@
           padding-left: 2.1875rem;
           padding-right: 7.6875rem;
           .counsel-info-cont-title {
-            font-size: var(--font-size-32);
+            font-size: $size-32;
             font-weight: bold;            
             color: #fff;
             margin-bottom: 1rem;
           }
           .counsel-info-cont-desc {            
-            font-size: var(--font-size-20);            
+            font-size: $size-20;            
             color: #fff;          
           }
         }
@@ -306,7 +306,7 @@
           width: 12.75rem;
           height: 3.5rem;                    
           background-color: #fff;
-          font-size: var(--font-size-16);
+          font-size: $size-16;
           font-weight: bold;          
           text-align: center;
           color: #0bc890;
@@ -321,7 +321,7 @@
       .cooper-company {
         width: $main_width;
         .title {
-          font-size: var(--font-size-32);
+          font-size: $size-32;
           font-weight: bold;          
           color: #2e3666; 
           margin-bottom: 2.8125rem;       
@@ -366,13 +366,13 @@
       padding-top: 1.8125rem;
       padding-bottom: 1.6875rem;
       .title {
-        font-size: var(--font-size-24);
+        font-size: $size-24;
         font-weight: bold;      
         line-height: 1.5;
         color: #fff;
       }
       .desc {
-        font-size: var(--font-size-18);        
+        font-size: $size-18;        
         line-height: 1.5;        
         color: #fff;      
       }
@@ -384,7 +384,7 @@
       width: 12.75rem;
       height: 3.5rem;            
       background-color: #2299f4;
-      font-size: var(--font-size-14);
+      font-size: $size-14;
       font-weight: bold;      
       line-height: 1.43;      
       text-align: center;
@@ -400,9 +400,9 @@
   // height: 214px;
   
   p.desc {
-    margin-top: var(--font-size-40);
-    margin-bottom: var(--font-size-20);
-    font-size: var(--font-size-14);    
+    margin-top: $size-40;
+    margin-bottom: $size-20;
+    font-size: $size-14;    
     color: #111;      
   }
 
@@ -413,12 +413,12 @@
 .question-wrapper {
   margin: 0 auto;
   margin-bottom: 6.25rem;
-  padding-top: var(--font-size-30);
+  padding-top: $size-30;
   width: $main_width;
 
   display: flex;
   flex-direction: column;
-  gap: var(--font-size-30);
+  gap: $size-30;
 
   .question-list {   
     border-top: 2px solid #2e3666;    
@@ -427,7 +427,7 @@
       details {        
         .ic-open-arrow {
           content: url("../assets/ic_list_arrow_down.svg");          
-          width: var(--font-size-14);
+          width: $size-14;
           height: 0.5rem;          
         }
         &[open] {
@@ -440,12 +440,12 @@
         }
         summary {
           background: #fff;
-          height: var(--size-80);
+          height: $size-80;
           display: flex;
           align-items: center;
           justify-content: space-between;
-          padding: 0 var(--font-size-20);
-          gap: var(--font-size-20);
+          padding: 0 $size-20;
+          gap: $size-20;
 
           .ic-question {
             content: url("../assets/ic_faq_q_n.png");                       
@@ -454,11 +454,11 @@
             flex: 1;
 
             .item-title1 {
-              font-size: var(--font-size-13);              
+              font-size: $size-13;              
               color: #aaa;
             }
             .item-title2 {
-              font-size: var(--font-size-18);              
+              font-size: $size-18;              
               color: #111;
             }
           }
@@ -467,9 +467,9 @@
           background-color: #f8f9fd;
           border-top: 1px solid #ccc;
           border-left: 4px solid #1ea5d2;
-          padding: var(--font-size-30);
+          padding: $size-30;
 
-          font-size: var(--font-size-14);          
+          font-size: $size-14;          
           line-height: 1.86;          
           color: #666;        
         }
@@ -481,30 +481,30 @@
 .privacy-wrapper {
   margin: 0 auto;
   margin-bottom: 6.25rem;
-  padding-top: var(--font-size-30);
+  padding-top: $size-30;
   width: $main_width;
 
   display: flex;
   flex-direction: column;
-  gap: var(--font-size-30);
+  gap: $size-30;
 
   .select-wrap {width: 200px;}
 
   .terms-box {
     display: flex;
     flex-direction: column;
-    gap: var(--font-size-30);
+    gap: $size-30;
     .article {
       display: flex;
       flex-direction: column;
-      gap: var(--font-size-20);
+      gap: $size-20;
       ol.article-list {
         display: flex;
         flex-direction: column;
-        gap: var(--font-size-10);
+        gap: $size-10;
         li {
           p.article-text {
-            font-size: var(--font-size-16);        
+            font-size: $size-16;        
             line-height: 1.88;        
             color: #666;
           }
@@ -520,44 +520,44 @@
   min-height: 43.5625rem;
 
   .login-inner {
-    width: var(--size-400);
+    width: $size-400;
     display: flex;
     flex-direction: column;
-    gap: var(--font-size-30);
+    gap: $size-30;
     .login-box {
       display: flex;
       flex-direction: column;
-      gap: var(--font-size-20);
+      gap: $size-20;
       ul.tab-menu {
         // @include flex_center;
-        height: var(--size-56);
+        height: $size-56;
         gap: 0;
         li {
-          height: var(--size-56);
-          width: var(--size-200);          
+          height:$size-56;
+          width:$size-200;          
           @include flex_center;
           color: #111;
         }
       }
       .btn-login {
-        width: var(--size-400);
-        height: var(--size-56);
+        width: $size-400;
+        height: $size-56;
         @include flex_center;
         background-color: #0bc890;
 
-        font-size: var(--font-size-16);
+        font-size: $size-16;
         font-weight: bold;        
         text-align: center;
         color: #fff;
       } 
-      p {font-size: var(--font-size-14);color: #666;}     
+      p {font-size: $size-16;color: #666;}     
     }
     ul.login-find {
       display: flex;
-      gap: var(--font-size-10);
+      gap: $size-10;
       justify-content: center;
 
-      font-size: var(--font-size-13);      
+      font-size: $size-13;     
       color: #999;
 
       li {        
@@ -572,12 +572,12 @@
 
 }
 .modal-completed {
-  width: var(--size-280);    
+  width: $size-280;
 
   p.desc {
     text-align: center;
-    margin-top: var(--font-size-40);    
-    font-size: var(--font-size-14);    
+    margin-top: $size-40;   
+    font-size: $size-14;  
     color: #111;      
   }
 }
