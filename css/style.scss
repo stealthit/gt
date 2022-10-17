@@ -60,13 +60,13 @@
     }
 
     &.section01 {
-      background: url(../assets/section01_bg.jpg) no-repeat center /cover;
+      background: url(#{$imgPath}section01_bg.jpg) no-repeat center /cover;
       height: 31.25rem;
       padding-top: 6.8125rem;
       padding-bottom: 6.5625rem;
 
       &.section11 {
-        background: url(../assets/main_banner.png) no-repeat center /cover;       
+        background: url(#{$imgPath}main_banner.png) no-repeat center /cover;       
         height: 50rem; 
       }
   
@@ -106,6 +106,9 @@
         width: $main_width;
         height: 31.875rem;
         margin: $size-80 0 $size-40;
+        img{
+          content: url(#{$imgPath}img_main_chart.png);
+        }
       }
     }
 
@@ -118,6 +121,21 @@
         width: $main_width;
         height: 28.125rem;
         li { 
+          &:first-child{
+            img{
+              content: url(#{$imgPath}img_main_goal.png);
+            }
+          }
+          &:nth-child(2){
+            img{
+              content: url(#{$imgPath}img_main_account.png);
+            }
+          }
+          &:last-child{
+            img{
+              content: url(#{$imgPath}img_main_hnwl.png);
+            }
+          }
           border: solid 1px #e5e5e5;         
           img {width: 22.75rem;height: 16.25rem;}
     
@@ -142,6 +160,21 @@
           flex-grow:1;
           display: flex;
           align-items: center;
+          &:nth-of-type(1){
+            img{
+              content: url(#{$imgPath}ic_core_01.png);
+            }
+          }
+          &:nth-of-type(2){
+            img{
+              content: url(#{$imgPath}ic_core_02.png);
+            }
+          }
+          &:nth-of-type(3){
+            img{
+              content: url(#{$imgPath}ic_core_03.png);
+            }
+          }
           .item-circle-wrapper {
             position: relative;
             width: 9.75rem;
@@ -150,6 +183,7 @@
             background-color: #fff;
             border-radius: 100%;
             @include flex_center;
+         
 
             .item-img-num {              
               position: absolute;
@@ -175,7 +209,7 @@
 
     &.section05 {
       height: $size-395;
-      background: url(../assets/img_service_bg.jpg) no-repeat center /cover;
+      background: url(#{$imgPath}img_service_bg.jpg) no-repeat center /cover;
       .section05-inner {
         width: $main_width;
         display: flex;
@@ -199,7 +233,16 @@
             display: flex;         
             flex-direction: row;   
             align-items: center;
-
+            &:nth-of-type(1){
+              img{
+                content: url(#{$imgPath}ic_service_01.png);
+              }
+            }
+            &:nth-of-type(2){
+              img{
+                content: url(#{$imgPath}ic_service_02.png);
+              }
+            }
             .item-img {
               margin-left: $size-62;
               margin-right: 2.1875rem;
@@ -269,7 +312,7 @@
             align-items: center;
 
             .ic-news-more {
-              content: url(../assets/ic_news_more.png);
+              content: url(#{$imgPath}ic_news_more.png);
               width: $size-20;
               height: $size-20;
             }
@@ -286,7 +329,10 @@
         border-radius: 3px;
         background-color: #0bc890;
 
-        img {height: 12.5rem;}
+        img {
+          height: 12.5rem;
+          content: url(#{$imgPath}img_info_banner.png);
+        }
         .counsel-info-cont {
           padding-left: 2.1875rem;
           padding-right: 7.6875rem;
@@ -332,6 +378,27 @@
           li {
             background: transparent;
             @include flex_center;
+            &:nth-child(1){
+              img{
+                content: url(#{$imgPath}img_cooperator_01.png);
+              }
+              }
+            &:nth-child(2){ 
+              img{
+              content: url(#{$imgPath}img_cooperator_02.png);
+            }}
+            &:nth-child(3){  img{
+              content: url(#{$imgPath}img_cooperator_03.png);
+            }}
+            &:nth-child(4){  img{
+              content: url(#{$imgPath}img_cooperator_04.png);
+            }}
+            &:nth-child(5){  img{
+              content: url(#{$imgPath}img_cooperator_05.png);
+            }}
+            &:nth-child(6){  img{
+              content: url(#{$imgPath}img_cooperator_06.png);
+            }}
           }
         }
       }
@@ -348,7 +415,7 @@
   background-color: #111d47;
   display: flex;
   justify-content: center;
- 
+  
   &.on {display: none;}
   &-info {
     position: relative;
@@ -359,7 +426,8 @@
       position: absolute;
       bottom: 1.3125rem;
       left: 0;
-      img {width: 7rem;}
+      img {width: 7rem;
+        content: url(#{$imgPath}ic_floating_counsel.png);}
     }
     .info-wrap {
       padding-left: 8.875rem;
@@ -426,7 +494,7 @@
       border-bottom: 1px solid #ccc;      
       details {        
         .ic-open-arrow {
-          content: url("../assets/ic_list_arrow_down.svg");          
+          content: url(#{$imgPath}ic_list_arrow_down.svg);          
           width: $size-14;
           height: 0.5rem;          
         }
@@ -435,7 +503,7 @@
             transform: rotateX(180deg);
           }
           .ic-question {
-            content: url("../assets/ic_faq_q_s.png");                       
+            content: url(#{$imgPath}ic_faq_q_s.png);                       
           }
         }
         summary {
@@ -448,7 +516,7 @@
           gap: $size-20;
 
           .ic-question {
-            content: url("../assets/ic_faq_q_n.png");                       
+            content: url(#{$imgPath}ic_faq_q_n.png);                       
           }
           .item-title-wrap {
             flex: 1;
