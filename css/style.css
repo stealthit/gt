@@ -518,7 +518,8 @@
   align-items: center;
   gap: 20px; }
   .insight-wrapper .search-wrapper p {
-    font-size: 13px; }
+    font-size: 13px;
+    color: #666; }
     .insight-wrapper .search-wrapper p span {
       color: #0bc890;
       font-weight: 500; }

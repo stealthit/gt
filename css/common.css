@@ -125,6 +125,21 @@ button.btn-green {
   .btn-question img {
     content: url(../assets/ic_floating_faq.png); }
 
+.btn-consult {
+  position: fixed;
+  right: calc(50% - 35.9375rem);
+  bottom: 21.25rem;
+  /*340px*/
+  border-radius: 100%;
+  width: 3.75rem;
+  height: 3.75rem;
+  padding: 1.15rem 1.1375rem 1.125rem 1.1375rem;
+  box-shadow: 0 3px 10px 0 rgba(0, 0, 0, 0.16);
+  border: solid 1px #eee;
+  background-color: #fff; }
+  .btn-consult img {
+    content: url(../assets/ic_floating_02.png); }
+
 .btn-group {
   display: flex;
   gap: 1rem; }
