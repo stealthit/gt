@@ -41,7 +41,7 @@
               </div>
               <div class="insdtl-btn-wrap">
                 <button class="btn-recommend"><img alt="추천" />추천</button>
-                <button><img alt="공유" />공유</button>
+                <button class="btn-share"><img alt="공유" />공유</button>
               </div>
             </div>
             <div class="insdtl-cont">
@@ -165,9 +165,9 @@
   <script src="../scripts/jquery-ui.min.js"></script>
   <script src="../scripts/script.js"></script>
   <script>
-    $(".btn-login").on("click", function () {
+    $(".btn-share").on("click", function () {
       $("#modal-background").fadeIn(100);
-      $(".modal-completed").css("display", "flex").hide().fadeIn();
+      $(".modal-share").css("display", "flex").hide().fadeIn();
       $("body").css("overflow", "hidden");
     });
 

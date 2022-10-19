@@ -203,17 +203,31 @@
       $("body").css("overflow", "hidden");
   });
 
-  $(document).ready(function () {
-        const li = $(".tab-menu li");
-        li.click(function () {
-          const tabId = $(this).attr("data-tab");
+  document.addEventListener("DOMContentLoaded", function(){
+    const li = document.querySelector(".tab-menu li");
+    document.querySelector(".button").addEventListener("click", (e) => {
+      const tabId = document.this.getAttribute("data-tab");
+      const tabCont = document.querySelector(".tab-content");
+      
+      li.classList.remove("active");
+      tabCont.lassList.remove("active");
 
-          li.removeClass("active");
-          $(".tab-content").removeClass("active");
-
-          $(this).addClass("active");
-          $("#" + tabId).addClass("active");
-        });
+      document.this.classList.add("active");
+      document.getElementById(tabId).classList.add("active")
       });
+});
+  // $(document).ready(function () {
+   
+  //       const li = $(".tab-menu li");
+  //       li.click(function () {
+  //         const tabId = $(this).attr("data-tab");
+
+  //         li.removeClass("active");
+  //         $(".tab-content").removeClass("active");
+
+  //         $(this).addClass("active");
+  //         $("#" + tabId).addClass("active");
+  //       });
+  //     });
 </script>
 </html>
