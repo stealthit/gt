@@ -696,12 +696,32 @@
   .search-wrapper {
     display: flex;
     justify-content: flex-end;
+    align-items: center;
+    gap:20px;
+    p{
+      font-size: 13px;
+      span{
+        color:#0bc890;
+        font-weight: 500;
+      }
+      
+    }
     .search-wrap {
       width: $size-314;
       display: flex;
     }
   }
   .latter-item-wrap {
+    .no-data{
+      width:100%;
+      @include flex_center();
+      flex-direction: column;
+      min-height: 300px;
+      gap:10px;
+      p{
+        color:#999
+      }
+    }
     display: flex;
     align-items: center;
     gap: $size-26 $size-20;
@@ -735,6 +755,16 @@
           color: #666;
         }
       }
+    }
+  }
+  .ic-search-wrap{
+    width:54px;
+    height:54px;
+    padding:18px;
+    border-radius: 50%;
+    background-color: rgba(153, 153, 153,0.1);
+    img{
+      content: url(#{$imgPath}ic_none_search.png);
     }
   }
 }
