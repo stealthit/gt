@@ -327,15 +327,11 @@ select, select.select-box {
           border-left: 1px solid #fff; }
     .footer .footer-inner .footer-right .footer-info {
       padding: 1.25rem 0 1.875rem 0; }
-    .footer .footer-inner .footer-right .footer-sns {
-      display: flex;
-      gap: 0.625rem; }
-      .footer .footer-inner .footer-right .footer-sns a:nth-child(1) img {
-        content: url(../assets/ic_footer_facebook.png); }
-      .footer .footer-inner .footer-right .footer-sns a:nth-child(2) img {
-        content: url(../assets/ic_footer_blog.png); }
-      .footer .footer-inner .footer-right .footer-sns a:nth-child(3) img {
-        content: url(../assets/ic_footer_kakao.png); }
+  .footer .footer-sns {
+    display: flex;
+    gap: 0.625rem; }
+    .footer .footer-sns a:nth-child(1) img {
+      content: url(../assets/ic_footer_kakao2.png); }
 
 .main {
   height: 100vh;

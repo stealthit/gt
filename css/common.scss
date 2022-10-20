@@ -392,29 +392,21 @@ select, select.select-box {
       .footer-info {
         padding: $size-20 0 $size-30 0;
       }
-      .footer-sns {
-        display: flex;
-        gap: $size-10;
-        a{
-          &:nth-child(1){
-            img{
-              content: url(#{$imgPath}ic_footer_facebook.png);
-            }
-          }
-          &:nth-child(2){
-            img{
-            content: url(#{$imgPath}ic_footer_blog.png);
-            }
-          }
-          &:nth-child(3){
-            img{
-            content: url(#{$imgPath}ic_footer_kakao.png);
-            }
-          }
-        }
-      
-      }
+     
     }
+  }
+  .footer-sns {
+    display: flex;
+    gap: $size-10;
+    a{
+      &:nth-child(1){
+        img{
+          content: url(#{$imgPath}ic_footer_kakao2.png);
+        }
+      }
+      
+    }
+  
   }
 }
 
