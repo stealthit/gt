@@ -106,78 +106,71 @@
         </div>
       </div>
 
-      <div id="modal-background"></div>
-      <div class="modal-share modal-con">
-        <button class="btn-ic-close close"><img alt="닫기" /></button>
-        <div class="modal-cont">
-          <ul class="share-wrap">
-            <li>
-              <div class="btn-kakao"><img alt="카카오톡"></div>
-              <p>카카오톡</p>
-            </li>
-            <li>
-              <div class="btn-facebook"><img alt="페이스북"></div>
-              <p>페이스북</p>
-            </li>
-            <li>
-              <div class="btn-twitter"><img alt="트위터"></div>
-              <p>트위터</p>
-            </li>
-            <li>
-              <div class="btn-band"><img alt="밴드"></div>
-              <p>밴드</p>
-            </li>
-            <li>
-              <div class="btn-line"><img alt="라인"></div>
-              <p>라인</p>
-            </li>
-            <li>
-              <div class="btn-blog"><img alt="블로그"></div>
-              <p>블로그</p>
-            </li>
-            <li>
-              <div class="btn-tstory"><img alt="티스토리"></div>
-              <p>티스토리</p>
-            </li>
-            <li>
-              <div class="btn-brunch"><img alt="브런치"></div>
-              <p>브런치</p>
-            </li>
-          </ul>
-        </div>
-        <div class="search-wrap">
-          <input type="text" name="" id="" >
-          <button class="btn-url">URL복사</button>
+      <div class="modal-con modal unstaged">
+        <div class="modal-overlay"></div>
+        <div id="modal-share" class="modal-contents">
+          <button class="btn-ic-close modal-close"><img class="ic-close" alt=""></button>                         
+          <div class="modal-body">
+            <div class="modal-cont">
+              <ul class="share-wrap">
+                <li>
+                  <div class="btn-kakao"><img alt="카카오톡"></div>
+                  <p>카카오톡</p>
+                </li>
+                <li>
+                  <div class="btn-facebook"><img alt="페이스북"></div>
+                  <p>페이스북</p>
+                </li>
+                <li>
+                  <div class="btn-twitter"><img alt="트위터"></div>
+                  <p>트위터</p>
+                </li>
+                <li>
+                  <div class="btn-band"><img alt="밴드"></div>
+                  <p>밴드</p>
+                </li>
+                <li>
+                  <div class="btn-line"><img alt="라인"></div>
+                  <p>라인</p>
+                </li>
+                <li>
+                  <div class="btn-blog"><img alt="블로그"></div>
+                  <p>블로그</p>
+                </li>
+                <li>
+                  <div class="btn-tstory"><img alt="티스토리"></div>
+                  <p>티스토리</p>
+                </li>
+                <li>
+                  <div class="btn-brunch"><img alt="브런치"></div>
+                  <p>브런치</p>
+                </li>
+              </ul>
+            </div>
+            <div class="search-wrap">
+              <input type="text" name="" id="" >
+              <button class="btn-url">URL복사</button>
+            </div>
+          </div>
+
         </div>
       </div>
+
+      
     </div>
   </body>
-  <script src="../scripts/jquery-3.6.0.min.js"></script>
-  <script src="../scripts/jquery-ui.min.js"></script>
+  
   <script src="../scripts/script.js"></script>`
   <script>
-    $(".btn-share").on("click", function () {
-      $("#modal-background").fadeIn(100);
-      $(".modal-share").css("display", "flex").hide().fadeIn();
-      $("body").css("overflow", "hidden");
-    });
-
-    $(document).ready(function () {
-      const li = $(".tab-menu li");
-      li.click(function () {
-        const tabId = $(this).attr("data-tab");
-
-        li.removeClass("active");
-        $(".tab-content").removeClass("active");
-
-        $(this).addClass("active");
-        $("#" + tabId).addClass("active");
-      });
-    });
-
-    $(".btn-recommend").on('click',function(){
-      $(this).toggleClass("active");
-    })
+     // modal-open
+    document.querySelector(".btn-share").addEventListener("click",function(){
+    let el = document.getElementById('modal-share');
+    if (el.closest('.modal-con').classList.contains('unstaged')) 
+      document.body.style.overflow = "hidden";
+    else document.body.style.overflow = "unset";
+    el.closest('.modal-con').classList.toggle('opaque');
+    el.closest('.modal-con').classList.toggle('unstaged');
+  })
 
     document.getElementByClassName("btn-recommend").on("click", function(){
       this.classList.toggle("active");

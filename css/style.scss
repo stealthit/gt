@@ -480,21 +480,20 @@
   }
 }
 
-// modal
-.modal-counsel {
-  width: 25rem;
-  // height: 214px;
-
+// counsel modal
+#modal-send-result {
+  width: 25rem;  
+  
   p.desc {
-    margin-top: $size-40;
+    margin-top: $size-20;
     margin-bottom: $size-20;
-    font-size: $size-14;
-    color: #111;
+    font-size: $size-14;    
+    color: #111;      
   }
-
-  .email,
-  .kakao {
+  
+  .email,.kakao {
     display: none;
+    margin-bottom: $size-30;
   }
 }
 
@@ -664,7 +663,7 @@
     }
   }
 }
-.modal-completed {
+#modal-completed {
   width: $size-280;
 
   p.desc {
@@ -941,7 +940,7 @@ button {
 
 // modal-share
 
-.modal-share {
+#modal-share {
   width: $size-344;
   height: $size-276;
   padding-top: $size-38;

@@ -219,53 +219,62 @@
       </div>
     </div>
     <button class="btn-consult"><img alt="상담하기"></button>
-    <div id="modal-background"></div>
-    <div class="modal-counsel modal-con">
-      <button class="btn-ic-close close"><img alt="close"></button>
-      <p class="desc email">고객님의 수익률 계산 결과를 E-mail로 보내드립니다.</p>
-      <input type="email" class="email" name="" id="" placeholder="이메일" pattern=".+@gmail\.com" size="30" required>
-      <p class="desc kakao">고객님의 수익률 계산 결과를 카카오톡으로 보내드립니다.</p>
-      <input type="tel" class="kakao" name="" id="" placeholder="휴대폰번호">
-      <div class="btn-sgroup">
-        <button class="btn-modal-white close">취소</button>
-        <button class="btn-modal-blue">전송</button>
+    
+    <div class="modal-con modal unstaged">
+      <div class="modal-overlay"></div>
+      <div id="modal-send-result" class="modal-contents">
+        <button class="btn-ic-close modal-close"><img class="ic-close" alt=""></button>       
+        <div class="email">
+          <p class="desc">고객님의 수익률 계산 결과를 E-mail로 보내드립니다.</p>
+          <input type="email" name="" id="" placeholder="이메일" pattern=".+@gmail\.com" size="30" required>
+        </div>    
+        <div class="kakao">
+          <p class="desc">고객님의 수익률 계산 결과를 카카오톡으로 보내드립니다.</p>
+          <input type="tel" name="" id="" placeholder="휴대폰번호">        
+        </div>     
+        <div class="modal-bottom">
+          <div class="btn-sgroup">
+            <button class="btn-modal-white modal-close">취소</button>
+            <button class="btn-modal-blue">전송</button>
+          </div>
+        </div>
       </div>
     </div>
   </div>
 </body>
-<script src="../scripts/jquery-3.6.0.min.js"></script>
-<script src="../scripts/jquery-ui.min.js"></script>
+
 <script src="../scripts/script.js"></script>
 
 <script>
 
-  var footerHei = $('.footer').outerHeight(),
-      $banner = $('.floating-counsel');
+  // var footerHei = $('.footer').outerHeight(),
+  //     $banner = $('.floating-counsel');
 
-    $(window).on('scroll', function() {
-    var sT = $(window).scrollTop();    
-    var val = $(document).height() - $(window).height() - footerHei;
+  //   $(window).on('scroll', function() {
+  //   var sT = $(window).scrollTop();    
+  //   var val = $(document).height() - $(window).height() - footerHei;
 
-    if (sT >= val)
-        $banner.addClass('on')
-    else
-      $banner.removeClass('on')
-  });
+  //   if (sT >= val)
+  //       $banner.addClass('on')
+  //   else
+  //     $banner.removeClass('on')
+  // });
 
-  document.getElementByClassName("btn-counsel").on("click", function () {
-    if (this.classList.contains("btn-email")) {
-      document.getElementByClassName("kakao").css("display","none");
-      document.getElementByClassName("email").css("display","block");
-    }
-    else if (this.classList.contains("btn-kakao")) {
-      document.getElementByClassName("email").css("display","none");
-      document.getElementByClassName("kakao").css("display","block");
-    }
-    else return;
-      document.getElementById("modal-background").fadeIn(100);
-      document.getElementByClassName("modal-counsel").css("display", "flex").style.display = "none".fadeIn();
-      $("body").css("overflow", "hidden");
-  });
+  // modal-open
+  document.querySelector(".btn-email").addEventListener("click",function(){
+    let el = document.getElementById('modal-send-result');
+    el.querySelector('.kakao').style.display = 'none';
+    el.querySelector('.email').style.display = 'block';
+    el.closest('.modal-con').classList.toggle('opaque');
+    el.closest('.modal-con').classList.toggle('unstaged');
+  })
+  document.querySelector(".btn-kakao").addEventListener("click",function(){
+    let el = document.getElementById('modal-send-result');
+    el.querySelector('.email').style.display = 'none';
+    el.querySelector('.kakao').style.display = 'block';
+    el.closest('.modal-con').classList.toggle('opaque');
+    el.closest('.modal-con').classList.toggle('unstaged');
+  })
 
 </script>
 </html>

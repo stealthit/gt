@@ -218,40 +218,32 @@
       </div>
     </div>
 
-    <div id="modal-background"></div>
-    <div class="modal-completed modal-con">
-      <button class="btn-ic-close close"><img alt="닫기"></button>
-      <p class="desc">상담신청이 완료되었습니다.</p>    
-      <div class="btn-sgroup">
-        <button class="btn-modal-blue">전송</button>      
-      </div>                
+    <div class="modal-con modal unstaged">
+      <div class="modal-overlay"></div>
+      <div id="modal-completed" class="modal-contents">
+        <button class="btn-ic-close modal-close"><img class="ic-close" alt=""></button>               
+        <p class="desc">상담신청이 완료되었습니다.</p>                
+        <div class="modal-bottom">
+          <div class="btn-sgroup">            
+            <button class="btn-modal-blue">전송</button>
+          </div>
+        </div>
+      </div>
     </div>
   </div>
 </body>
-<script src="../scripts/jquery-3.6.0.min.js"></script>
-<script src="../scripts/jquery-ui.min.js"></script>
 <script src="../scripts/script.js"></script>
 <script>
-  $(".btn-login").on("click", function () {                
-      $("#modal-background").fadeIn(100);
-      $(".modal-completed").css("display", "flex").hide().fadeIn();
-      $("body").css("overflow", "hidden");
-  });
+    // modal-open
+    document.querySelector(".btn-login").addEventListener("click",function(){
+    let el = document.getElementById('modal-completed');
+    if (el.closest('.modal-con').classList.contains('unstaged')) 
+      document.body.style.overflow = "hidden";
+    else document.body.style.overflow = "unset";
+    el.closest('.modal-con').classList.toggle('opaque');
+    el.closest('.modal-con').classList.toggle('unstaged');
+  })
 
-
-  // $(document).ready(function () {
-   
-  //       const li = $(".tab-menu li");
-  //       li.click(function () {
-  //         const tabId = $(this).attr("data-tab");
-
-  //         li.removeClass("active");
-  //         $(".tab-content").removeClass("active");
-
-  //         $(this).addClass("active");
-  //         $("#" + tabId).addClass("active");
-  //       });
-  //     });
 const tabMenuList = document.querySelectorAll('ul.tab-menu > li');
 
   tabMenuList.forEach((list) =>{
