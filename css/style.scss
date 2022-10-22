@@ -942,11 +942,13 @@ button {
 
 #modal-share {
   width: $size-344;
-  height: $size-276;
+  height: $size-292;
   padding-top: $size-38;
   padding-bottom: $size-30;
   border: solid 1px #111;
-
+  .modal-body{
+    margin-bottom: 0;
+  }
   .share-wrap {
     @include flex_center();
     gap: $size-30 $size-20;

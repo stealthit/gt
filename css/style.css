@@ -711,10 +711,12 @@ button.btn-ic-search {
 
 #modal-share {
   width: 21.5rem;
-  height: 17.25rem;
+  height: 18.25rem;
   padding-top: 2.375rem;
   padding-bottom: 1.875rem;
   border: solid 1px #111; }
+  #modal-share .modal-body {
+    margin-bottom: 0; }
   #modal-share .share-wrap {
     display: flex;
     align-items: center;

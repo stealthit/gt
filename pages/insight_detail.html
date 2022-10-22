@@ -13,12 +13,20 @@
         <div class="top-menu-wrapper">
           <div class="header-logo"><img></div>
           <ul class="menu-main">
-            <li class="active"><a href="">Home</a></li>
-            <li><a href="">Product</a></li>
-            <li><a href="">Insight</a></li>
-            <li><a href="">FA</a></li>
-            <li><a href="">Information</a></li>
+            <li class="active"><a href="javascript:;">Home</a></li>
+            <li><a href="javascript:;">Product</a></li>
+            <li><a href="javascript:;">Insight</a></li>
+            <li><a href="javascript:;">FA</a></li>
+            <li>
+              <a href="javascript:;">Information</a>
+              <ul class="menu-sub">
+                <li><a href="javascript:;">공지사항</a></li>
+                <li><a href="javascript:;">자주묻는질문</a></li>
+              </ul>
+            
+            </li>
           </ul>
+        
         </div>
       </div>
       <div class="insight-detail-wrapper">
@@ -172,7 +180,8 @@
     el.closest('.modal-con').classList.toggle('unstaged');
   })
 
-    document.getElementByClassName("btn-recommend").on("click", function(){
+  
+    document.querySelector(".btn-recommend").addEventListener("click", function(){
       this.classList.toggle("active");
     })
   </script>
