@@ -622,6 +622,14 @@ select.select-box {
   html {
     font-size: 10px
   }
+  .footer{
+    .footer-inner{
+      gap: 7.375rem;
+    }
+  }
+  .main-wrapper section.section05 .section05-inner .section-right ul li .item-img{
+    margin-left: 1.875rem;
+  }
 }
 
 @media (max-width: 425px) {
