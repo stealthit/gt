@@ -374,6 +374,7 @@ select.select-box {
   .footer .footer-inner {
     width: 71.875rem;
     display: flex;
+    justify-content: space-between;
     gap: 8.375rem;
     margin-top: 3.75rem;
     margin-bottom: 3.125rem;
