@@ -109,6 +109,77 @@
         img {
           content: url(#{$imgPath}img_main_chart.png);
         }
+        .graph-box{
+          position: relative;
+        }
+        .graph-front{
+          width:$size-335;
+          height:$size-270;
+          padding:$size-20;
+          position: absolute;
+          left:0;
+          top:0;
+          z-index: 1;
+          background-color: #fff;
+          border:1px solid #ddd;
+          .graph-front-top{
+            .progress-box{
+              position: relative;
+              margin-bottom: $size-30;
+              .progress-btn{
+                position:absolute;
+                left:55%;
+                width:15px;
+                height:15px;
+                border:1px solid #ddd;
+                border-radius: 50%;
+                background-color: #fff;
+              }
+            }
+            progress {
+              -webkit-appearance: none;
+              width:100%;
+             height: 4px;
+            }
+            
+            ::-webkit-progress-bar {
+              background-color: rgb(243, 243, 243);
+              border-radius: 20px;
+            }
+            
+            ::-webkit-progress-value {
+              background-color: #0bc890;
+              border-radius: 20px;
+            }
+    
+            div{
+              display:flex;
+              align-items: center;
+              justify-content: space-between;
+              margin-bottom: $size-20;
+              p{
+                font-size: $size-16;
+              }
+              span{
+                font-size: $size-16;
+                color:#0bc890;
+                font-weight: bold;
+              }
+            }
+          }
+          .graph-front-bottom{
+            text-align: right;
+            margin-top: $size-10;
+            p{
+              font-size: $size-16;
+            }
+            span{
+              font-size: $size-26;
+              color:#1ea5d2;
+              font-weight: bold;
+            }
+          }
+        }
       }
     }
 

@@ -103,6 +103,59 @@
       margin: 5rem 0 2.5rem; }
       .main-wrapper section.section02 .chart-wrapper img {
         content: url(../assets/img_main_chart.png); }
+      .main-wrapper section.section02 .chart-wrapper .graph-box {
+        position: relative; }
+      .main-wrapper section.section02 .chart-wrapper .graph-front {
+        width: 20.9375rem;
+        height: 16.875rem;
+        padding: 1.25rem;
+        position: absolute;
+        left: 0;
+        top: 0;
+        z-index: 1;
+        background-color: #fff;
+        border: 1px solid #ddd; }
+        .main-wrapper section.section02 .chart-wrapper .graph-front .graph-front-top .progress-box {
+          position: relative;
+          margin-bottom: 1.875rem; }
+          .main-wrapper section.section02 .chart-wrapper .graph-front .graph-front-top .progress-box .progress-btn {
+            position: absolute;
+            left: 55%;
+            width: 15px;
+            height: 15px;
+            border: 1px solid #ddd;
+            border-radius: 50%;
+            background-color: #fff; }
+        .main-wrapper section.section02 .chart-wrapper .graph-front .graph-front-top progress {
+          -webkit-appearance: none;
+          width: 100%;
+          height: 4px; }
+        .main-wrapper section.section02 .chart-wrapper .graph-front .graph-front-top ::-webkit-progress-bar {
+          background-color: #f3f3f3;
+          border-radius: 20px; }
+        .main-wrapper section.section02 .chart-wrapper .graph-front .graph-front-top ::-webkit-progress-value {
+          background-color: #0bc890;
+          border-radius: 20px; }
+        .main-wrapper section.section02 .chart-wrapper .graph-front .graph-front-top div {
+          display: flex;
+          align-items: center;
+          justify-content: space-between;
+          margin-bottom: 1.25rem; }
+          .main-wrapper section.section02 .chart-wrapper .graph-front .graph-front-top div p {
+            font-size: 1rem; }
+          .main-wrapper section.section02 .chart-wrapper .graph-front .graph-front-top div span {
+            font-size: 1rem;
+            color: #0bc890;
+            font-weight: bold; }
+        .main-wrapper section.section02 .chart-wrapper .graph-front .graph-front-bottom {
+          text-align: right;
+          margin-top: 0.625rem; }
+          .main-wrapper section.section02 .chart-wrapper .graph-front .graph-front-bottom p {
+            font-size: 1rem; }
+          .main-wrapper section.section02 .chart-wrapper .graph-front .graph-front-bottom span {
+            font-size: 1.625rem;
+            color: #1ea5d2;
+            font-weight: bold; }
   .main-wrapper section.section03 {
     height: 40.625rem;
     padding: 6.25rem 24.0625rem;
