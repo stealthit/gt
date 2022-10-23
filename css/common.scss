@@ -624,15 +624,25 @@ select.select-box {
   }
   .footer{
     .footer-inner{
-      gap: 7.375rem;
+      gap: 5.375rem;
     }
   }
-  .main-wrapper section.section05 .section05-inner .section-right ul li .item-img{
-    margin-left: 1.875rem;
+  .main-wrapper {
+    section.section05{
+      .section05-inner{
+        .section-right{
+          ul li{
+            .item-img{
+              margin-left: 1.875rem;
+            }
+          } 
+        }
+      } 
+    } 
   }
 }
 
-@media (max-width: 425px) {
+@media (max-width: 426px) {
 
   body,
   html {
@@ -644,11 +654,15 @@ select.select-box {
   }
 
   .header-wrapper .top-menu-wrapper {
-    width: auto;
+    width: 100%;
+    gap: 3.25rem;
   }
 
   .header-logo {
     width: 17.25rem;
     margin-left: 5px;
+  }
+  .header-wrapper .top-menu-wrapper ul.menu-main{
+    gap:0;
   }
 }
