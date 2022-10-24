@@ -941,7 +941,7 @@ button.btn-ic-search {
 
   .main-wrapper section.section06 ul li .item-date {
     width: 7.75rem;
-    height: 2rem; }
+    height: auto; }
 
   .main-wrapper section.section06 ul li .item-subject {
     font-size: 1.3rem; }
