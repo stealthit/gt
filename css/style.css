@@ -939,6 +939,9 @@ button.btn-ic-search {
   .main-wrapper section.section06 ul li {
     justify-content: center; }
 
+  .main-wrapper section.section06 ul {
+    gap: 1rem; }
+
   .main-wrapper section.section06 ul li .item-date {
     width: 7.75rem;
     height: auto; }
