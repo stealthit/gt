@@ -1181,7 +1181,7 @@ button {
   .main-wrapper section.section05 .section05-inner .section-right ul li .item-info .info-count{top: 4.25rem;font-size: 3rem;}
   .main-wrapper section.section06 ul li{justify-content: center;}
   .main-wrapper section.section06 ul{gap:1rem}
-  .main-wrapper section.section06 ul li .item-date{width: 7.75rem;height: auto;}
+  .main-wrapper section.section06 ul li .item-date{width: auto;height: auto;padding:0.1rem 0.1rem}
   .main-wrapper section.section06 ul li .item-subject{font-size: 1.3rem;}
   .footer{height:100%;}
   .footer .footer-inner{padding: 0 1rem}
@@ -1194,6 +1194,7 @@ button {
   .main-wrapper section.section05 .section05-inner .section-right{
     justify-content: center;
   }
+  
   .main-wrapper section.section06 .counsel-info .counsel-info-cont{padding-right: 1.3875rem;}
   .main-wrapper section.section06 .counsel-info{padding: 0 2.75rem 0 2.375rem;}
 }

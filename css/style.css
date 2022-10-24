@@ -943,8 +943,9 @@ button.btn-ic-search {
     gap: 1rem; }
 
   .main-wrapper section.section06 ul li .item-date {
-    width: 7.75rem;
-    height: auto; }
+    width: auto;
+    height: auto;
+    padding: 0.1rem 0.1rem; }
 
   .main-wrapper section.section06 ul li .item-subject {
     font-size: 1.3rem; }
