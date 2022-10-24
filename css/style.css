@@ -952,13 +952,22 @@ button.btn-ic-search {
   .footer .footer-inner {
     padding: 0 1rem; } }
 @media (max-width: 340px) {
+  .header-wrapper .top-menu-wrapper {
+    gap: 0; }
+
   .main-wrapper section.section01 .section01-inner .section01-desc {
     font-size: 3.275rem; }
 
   .main-wrapper section.section02 button.btn-green {
     padding: 0.9375rem 4rem 1.0625rem; }
 
+  .main-wrapper section.section05 .section05-inner .section-right {
+    justify-content: center; }
+
   .main-wrapper section.section06 .counsel-info .counsel-info-cont {
-    padding-right: 3.3875rem; } }
+    padding-right: 1.3875rem; }
+
+  .main-wrapper section.section06 .counsel-info {
+    padding: 0 2.75rem 0 2.375rem; } }
 
 /*# sourceMappingURL=style.css.map */
