@@ -97,7 +97,6 @@ select, select.select-box { -webkit-appearance: none; -moz-appearance: none; app
 .header-wrapper .top-menu-wrapper { width: 71.875rem; height: 6.25rem; display: -webkit-box; display: -ms-flexbox; display: flex; -webkit-box-pack: justify; -ms-flex-pack: justify; justify-content: space-between; -webkit-box-align: center; -ms-flex-align: center; align-items: center; gap: 11.25rem; }
 .header-wrapper .top-menu-wrapper .header-logo img { content: url(../assets/img_top_logo.png); }
 .header-wrapper .top-menu-wrapper ul.menu-main > li:hover > ul.menu-sub { display: block; }
-.header-wrapper .top-menu-wrapper ul.menu-main > li.active > ul.menu-sub { display: block; }
 .header-wrapper .top-menu-wrapper ul.menu-main { display: -webkit-box; display: -ms-flexbox; display: flex; font-size: 1.0625rem; font-weight: bold; color: #2e3666; }
 .header-wrapper .top-menu-wrapper ul.menu-main > li { position: relative; padding: 0.625rem 1.25rem; }
 .header-wrapper .top-menu-wrapper ul.menu-main li.active { color: #1ea5d2; }
@@ -123,6 +122,13 @@ select, select.select-box { -webkit-appearance: none; -moz-appearance: none; app
 .footer .footer-sns a:nth-child(1) img { content: url(../assets/ic_footer_kakao2.png); }
 
 .main { height: 100vh; display: -webkit-box; display: -ms-flexbox; display: flex; -webkit-box-orient: vertical; -webkit-box-direction: normal; -ms-flex-direction: column; flex-direction: column; -webkit-box-pack: justify; -ms-flex-pack: justify; justify-content: space-between; padding-top: 6.25rem; }
+
+table.gt-table { width: 100%; }
+table.gt-table thead { height: 3.25rem; background-color: #fff; font-size: 0.8125rem; font-weight: 500; color: #111; border-top: 2px solid #2e3666; border-bottom: 1px solid #2e3666; }
+table.gt-table thead tr th { height: 2.1875rem; vertical-align: middle; }
+table.gt-table tbody tr { height: 3.125rem; border-bottom: 1px solid #ccc; }
+table.gt-table tbody tr td { padding: 0 0.9375rem; vertical-align: middle; text-align: center; font-size: 0.875rem; color: #111; }
+table.gt-table .t-bottom { border-bottom: 1px solid #2e3666; }
 
 @media (max-width: 1279px) { body, html { font-size: 13px; }
   .header-wrapper .top-menu-wrapper ul.menu-main { gap: 2rem; font-size: 1.0625rem; font-weight: bold; color: #2e3666; }

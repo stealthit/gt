@@ -5,7 +5,7 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <link rel="stylesheet" href="../css/style.css" />
-    <title>Insight</title>
+    <title>Information</title>
   </head>
   <body>
     <div class="main">
@@ -13,34 +13,32 @@
         <div class="top-menu-wrapper">
           <div class="header-logo"><img></div>
           <ul class="menu-main">
-            <li class="active"><a href="javascript:;">Home</a></li>
+            <li><a href="javascript:;">Home</a></li>
             <li><a href="javascript:;">Product</a></li>
             <li><a href="javascript:;">Insight</a></li>
             <li><a href="javascript:;">FA</a></li>
-            <li>
+            <li class="active">
               <a href="javascript:;">Information</a>
               <ul class="menu-sub">
                 <li><a href="javascript:;">공지사항</a></li>
                 <li><a href="javascript:;">자주묻는질문</a></li>
               </ul>
-            
             </li>
           </ul>
         
         </div>
       </div>
-      <div class="insight-detail-wrapper">
+      <div class="information-detail-wrapper">
         <div class="container">
-          <a href="./insight.html"><img alt="뒤로가기" /></a>
+          <a href="./information.html"><img alt="뒤로가기" /></a>
           <div class="insight-dtl-inner">
             <div class="insdtl-tit">
               <div>
                 <h3>(2022년 9월초) 연말로 갈 수록 추가적인 긴축 명분은 약해질 것입니다.</h3>
-                <span>입력 2022.09.05 오후 12:15 | 수정 2022.09.05 오후 12:31</span>
+                <span>등록 2022.09.05 오후 12:15 | 작성자 홍길동</span>
               </div>
-              <div class="insdtl-btn-wrap">
-                <button class="btn-recommend"><img alt="추천" />추천</button>
-                <button class="btn-share"><img alt="공유" />공유</button>
+              <div class="insdtl-views-wrap">
+               <p>조회수 <span>30</span></p>
               </div>
             </div>
             <div class="insdtl-cont">
@@ -74,31 +72,6 @@
                   </div>
               </div>
             </div>
-            <!-- <div class="insdtl-foot">
-              <div class="insdtl-foot-profile">
-                <div class="pro-photo"><img alt="프로필사진" /></div>
-                <div>
-                  <p class="pro-name">홍길동 (Hong Gil Dong)</p>
-                  <span class="pro-email">abdkdkdk@mail.com</span>
-                </div>
-              </div>
-              <div class="insdtl-foot-cont">
-                <ul>
-                  <li>삼성자산운용 자문</li>
-                  <li>삼성생명 투자팀 본부장</li>
-                  <li>OO투자 컨설팅 대표</li>
-                  <li>OO투자 컨설팅 부사장</li>
-                  <li>OO투자 컨설팅 본부장</li>
-                </ul>
-                <ul>
-                  <li>삼성자산운용 자문</li>
-                  <li>삼성생명 투자팀 본부장</li>
-                  <li>OO투자 컨설팅 대표</li>
-                  <li>OO투자 컨설팅 부사장</li>
-                  <li>OO투자 컨설팅 본부장</li>
-                </ul>
-              </div>
-            </div> -->
           </div>
         </div>
       </div>
@@ -185,19 +158,6 @@
   
   <script src="../scripts/script.js"></script>`
   <script>
-     // modal-open
-    document.querySelector(".btn-share").addEventListener("click",function(){
-    let el = document.getElementById('modal-share');
-    if (el.closest('.modal-con').classList.contains('unstaged')) 
-      document.body.style.overflow = "hidden";
-    else document.body.style.overflow = "unset";
-    el.closest('.modal-con').classList.toggle('opaque');
-    el.closest('.modal-con').classList.toggle('unstaged');
-  })
-
-  
-    document.querySelector(".btn-recommend").addEventListener("click", function(){
-      this.classList.toggle("active");
-    })
+    
   </script>
 </html>

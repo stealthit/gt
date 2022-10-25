@@ -431,9 +431,9 @@ select.select-box {
     ul.menu-main > li:hover >ul.menu-sub{
       display: block;
     }
-    ul.menu-main > li.active >ul.menu-sub{
-      display: block;
-    }
+    // ul.menu-main > li.active >ul.menu-sub{
+    //   display: block;
+    // }
     ul.menu-main {
 
       display: flex;
@@ -592,6 +592,37 @@ select.select-box {
   padding-top: 6.25rem;
 }
 
+
+table.gt-table {
+  width: 100%;
+  thead {
+    height: 3.25rem;
+    background-color: #fff;
+    font-size: 0.8125rem;
+    font-weight: 500;
+    color: #111;
+    border-top: 2px solid #2e3666;
+    border-bottom: 1px solid #2e3666;
+    tr th {
+      height: 2.1875rem;
+      vertical-align: middle;
+    }
+  }
+  tbody tr {
+    height: 3.125rem;
+    border-bottom: 1px solid #ccc;
+    td {
+      padding: 0 0.9375rem;
+      vertical-align: middle;
+      text-align: center;
+      font-size: 0.875rem;
+      color: #111;
+    }
+  }
+  .t-bottom {
+    border-bottom: 1px solid #2e3666;
+  }
+}
 @media (max-width: 1279px) {
 
   body,
