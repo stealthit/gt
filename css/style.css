@@ -256,7 +256,10 @@ button.btn-ic-search::before { content: url(../assets/ic_search.png); width: 1.1
   .main-wrapper section.section06 ul li { padding: 0.875rem; }
   .main-wrapper section.section06 ul li .item-date { width: 5.75rem; }
   .main-wrapper section.section07 { padding: 0 1rem; }
-  .main-wrapper section.section07 .cooper-company { width: 100%; } }
+  .main-wrapper section.section07 .cooper-company { width: 100%; }
+  .insight-wrapper .container { width: 100%; }
+  .insight-wrapper .container .latter-item-wrap { -webkit-box-pack: center; -ms-flex-pack: center; justify-content: center; }
+  .insight-wrapper .container .latter-item-wrap .latter-item { width: 48%; } }
 @media (max-width: 426px) { body, html { font-size: 8px; }
   .header-wrapper { -webkit-box-pack: start; -ms-flex-pack: start; justify-content: flex-start; }
   .header-wrapper .top-menu-wrapper { width: 100%; gap: 3.25rem; }
@@ -278,7 +281,11 @@ button.btn-ic-search::before { content: url(../assets/ic_search.png); width: 1.1
   .main-wrapper section.section06 ul li .item-date { width: 4.75rem; height: auto; }
   .main-wrapper section.section06 ul li .item-subject { font-size: 1.3rem; }
   .main-wrapper .footer { height: 100%; }
-  .main-wrapper .footer .footer-inner { padding: 0 1rem; } }
+  .main-wrapper .footer .footer-inner { padding: 0 1rem; }
+  ul.tab-menu { height: 100%; gap: 1.1rem; }
+  ul.tab-menu li { height: 100%; } }
+@media (max-width: 380px) { .insight-wrapper .container .latter-item-wrap { -webkit-box-pack: center; -ms-flex-pack: center; justify-content: center; }
+  .insight-wrapper .container .latter-item-wrap .latter-item { width: 100%; } }
 @media (max-width: 340px) { .header-wrapper .top-menu-wrapper { gap: 0; }
   .main-wrapper section.section01 .section01-inner .section01-desc { font-size: 3.275rem; }
   .main-wrapper section.section02 button.btn-green { padding: 0.9375rem 4rem 1.0625rem; }

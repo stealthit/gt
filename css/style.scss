@@ -1175,6 +1175,15 @@ button {
       .cooper-company{width:100%;}
     }
   }  
+  .insight-wrapper .container{
+    width:100%;
+    .latter-item-wrap {
+        justify-content: center;
+        .latter-item{
+          width:48%;
+        }
+    }
+  }
 }
 
 @media (max-width: 426px) {
@@ -1249,9 +1258,26 @@ button {
     }
 
   }  
-
+  ul.tab-menu{
+    height: 100%;
+    gap: 1.1rem;
+    li{height: 100%;}
+  }
 }
 
+@media (max-width:380px){
+  .insight-wrapper{
+    .container{
+      .latter-item-wrap {
+        justify-content: center;
+        .latter-item{
+          width:100%;
+        }
+    }
+    } 
+  } 
+  
+}
 @media (max-width:340px) {
   .header-wrapper {
     .top-menu-wrapper{gap:0;}
