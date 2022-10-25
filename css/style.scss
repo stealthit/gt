@@ -1263,6 +1263,25 @@ button {
     gap: 1.1rem;
     li{height: 100%;}
   }
+  .insight-detail-wrapper{
+    .container{
+      width:100%;
+    }
+    .insight-dtl-inner{
+      .insdtl-tit{
+      flex-direction: column;
+      align-items: flex-start;
+      gap:1rem;
+      }
+      .insdtl-btn-wrap{justify-content: flex-end;width: 100%;}
+      .insdtl-foot{
+        gap:1rem;
+        .insdtl-foot-cont {
+          gap:1rem;
+        }
+      }
+    } 
+  } 
 }
 
 @media (max-width:380px){

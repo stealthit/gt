@@ -283,7 +283,12 @@ button.btn-ic-search::before { content: url(../assets/ic_search.png); width: 1.1
   .main-wrapper .footer { height: 100%; }
   .main-wrapper .footer .footer-inner { padding: 0 1rem; }
   ul.tab-menu { height: 100%; gap: 1.1rem; }
-  ul.tab-menu li { height: 100%; } }
+  ul.tab-menu li { height: 100%; }
+  .insight-detail-wrapper .container { width: 100%; }
+  .insight-detail-wrapper .insight-dtl-inner .insdtl-tit { -webkit-box-orient: vertical; -webkit-box-direction: normal; -ms-flex-direction: column; flex-direction: column; -webkit-box-align: start; -ms-flex-align: start; align-items: flex-start; gap: 1rem; }
+  .insight-detail-wrapper .insight-dtl-inner .insdtl-btn-wrap { -webkit-box-pack: end; -ms-flex-pack: end; justify-content: flex-end; width: 100%; }
+  .insight-detail-wrapper .insight-dtl-inner .insdtl-foot { gap: 1rem; }
+  .insight-detail-wrapper .insight-dtl-inner .insdtl-foot .insdtl-foot-cont { gap: 1rem; } }
 @media (max-width: 380px) { .insight-wrapper .container .latter-item-wrap { -webkit-box-pack: center; -ms-flex-pack: center; justify-content: center; }
   .insight-wrapper .container .latter-item-wrap .latter-item { width: 100%; } }
 @media (max-width: 340px) { .header-wrapper .top-menu-wrapper { gap: 0; }
