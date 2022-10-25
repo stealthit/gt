@@ -235,7 +235,8 @@ button.btn-ic-search::before { content: url(../assets/ic_search.png); width: 1.1
 
 @media (max-width: 820px) { body, html { font-size: 10px; }
   .footer .footer-inner { gap: 1.5rem; }
-  .main-wrapper section.section05 .section05-inner .section-right ul li .item-img { margin-left: 1.875rem; } }
+  .main-wrapper section.section05 .section05-inner .section-right ul li .item-img { margin-left: 1.875rem; }
+  .insight-wrapper .latter-item-wrap .latter-item .latter-item-cont { padding: 0.6rem; } }
 @media (max-width: 768px) { .main-wrapper section.section01 .section01-inner { width: 100%; padding-left: 2rem; }
   .main-wrapper section.section02 .chart-wrapper { width: 100%; height: 100%; margin: 5rem 0 2.5rem; }
   .main-wrapper section.section02 .chart-wrapper .graph-front { left: 1rem; }
@@ -245,10 +246,10 @@ button.btn-ic-search::before { content: url(../assets/ic_search.png); width: 1.1
   .main-wrapper section.section04 ul { width: 100%; }
   .main-wrapper section.section05 { padding: 0 1rem; }
   .main-wrapper section.section05 .section05-inner { width: 100%; }
+  .main-wrapper section.section06 .counsel-info { width: 100%; }
   .main-wrapper section.section06 ul { width: 100%; padding: 0 1rem; }
   .main-wrapper section.section06 ul li { padding: 0.875rem; }
   .main-wrapper section.section06 ul li .item-date { width: 5.75rem; }
-  .main-wrapper section.section06 .counsel-info { width: 100%; }
   .main-wrapper section.section07 { padding: 0 1rem; }
   .main-wrapper section.section07 .cooper-company { width: 100%; } }
 @media (max-width: 426px) { body, html { font-size: 8px; }
@@ -264,19 +265,20 @@ button.btn-ic-search::before { content: url(../assets/ic_search.png); width: 1.1
   .main-wrapper section.section05 .section05-inner { -webkit-box-orient: vertical; -webkit-box-direction: normal; -ms-flex-direction: column; flex-direction: column; gap: 2rem; }
   .main-wrapper section.section05 .section05-inner .section-right { -webkit-box-pack: end; -ms-flex-pack: end; justify-content: flex-end; }
   .main-wrapper section.section05 .section05-inner .section-right ul li { height: 11.1875rem; width: 18.6875rem; }
-  .main-wrapper section.section05 .section05-inner .section-right ul li .item-img { margin-left: 1.875rem; width: 25%; }
   .main-wrapper section.section05 .section05-inner .section-right ul li .item-info .info-title { top: 2.325rem; font-size: 1.375rem; }
   .main-wrapper section.section05 .section05-inner .section-right ul li .item-info .info-count { top: 4.25rem; font-size: 3rem; }
-  .main-wrapper section.section06 ul li { -webkit-box-pack: center; -ms-flex-pack: center; justify-content: center; }
+  .main-wrapper section.section05 .section05-inner .section-right ul li .item-img { margin-left: 1.875rem; width: 25%; }
   .main-wrapper section.section06 ul { gap: 1rem; }
+  .main-wrapper section.section06 ul li { -webkit-box-pack: center; -ms-flex-pack: center; justify-content: center; }
   .main-wrapper section.section06 ul li .item-date { width: 4.75rem; height: auto; }
   .main-wrapper section.section06 ul li .item-subject { font-size: 1.3rem; }
-  .footer { height: 100%; }
-  .footer .footer-inner { padding: 0 1rem; } }
+  .main-wrapper .footer { height: 100%; }
+  .main-wrapper .footer .footer-inner { padding: 0 1rem; } }
 @media (max-width: 340px) { .header-wrapper .top-menu-wrapper { gap: 0; }
   .main-wrapper section.section01 .section01-inner .section01-desc { font-size: 3.275rem; }
   .main-wrapper section.section02 button.btn-green { padding: 0.9375rem 4rem 1.0625rem; }
   .main-wrapper section.section05 .section05-inner .section-right { -webkit-box-pack: center; -ms-flex-pack: center; justify-content: center; }
-  .main-wrapper section.section06 .counsel-info .counsel-info-cont { padding-right: 1.3875rem; }
-  .main-wrapper section.section06 .counsel-info { padding: 0 2.75rem 0 2.375rem; } }
+  .main-wrapper section.section06 .counsel-info { padding: 0 2.75rem 0 2.375rem; }
+  .main-wrapper section.section06 .counsel-info counsel-info-cont { padding-right: 1.3875rem; } }
+
 /*# sourceMappingURL=style.css.map */

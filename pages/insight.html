@@ -226,44 +226,13 @@
       </div>
     </div>
 
-    <div class="modal-con modal unstaged">
-      <div class="modal-overlay"></div>
-      <div id="modal-completed" class="modal-contents">
-        <button class="btn-ic-close modal-close"><img class="ic-close" alt=""></button>               
-        <p class="desc">상담신청이 완료되었습니다.</p>                
-        <div class="modal-bottom">
-          <div class="btn-sgroup">            
-            <button class="btn-modal-blue">전송</button>
-          </div>
-        </div>
-      </div>
-    </div>
+  
   </div>
 </body>
 <script src="../scripts/script.js"></script>
 <script>
-    // modal-open
-    document.querySelector(".btn-login").addEventListener("click",function(){
-    let el = document.getElementById('modal-completed');
-    if (el.closest('.modal-con').classList.contains('unstaged')) 
-      document.body.style.overflow = "hidden";
-    else document.body.style.overflow = "unset";
-    el.closest('.modal-con').classList.toggle('opaque');
-    el.closest('.modal-con').classList.toggle('unstaged');
-  })
+   
 
-const tabMenuList = document.querySelectorAll('ul.tab-menu > li');
 
-  tabMenuList.forEach((list) =>{
-    list.addEventListener('click',() => {
-      removeClass(siblings(list),'active');
-      list.classList.add('active');
-
-      const tabId = list.getAttribute("data-tab");
-      var sib=siblings(document.getElementById(tabId));
-      removeClass(sib,'active');
-      document.getElementById(tabId).classList.add("active");
-    })
-  })
 </script>
 </html>
