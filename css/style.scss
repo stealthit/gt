@@ -1099,7 +1099,14 @@ button {
     }
   }
 }
+@media (max-width: 1024px) {
 
+  .footer{
+    .footer-inner{
+      gap:7.375rem;
+    }
+  }
+}
 
 @media (max-width: 820px) {
 
