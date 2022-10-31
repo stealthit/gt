@@ -336,6 +336,5 @@ button.btn-ic-search::before { content: url(../assets/ic_search.png); width: 1.1
   .main-wrapper section.section06 .counsel-info counsel-info-cont { padding-right: 1.3875rem; }
   .insight-detail-wrapper .insight-dtl-inner .insdtl-cont .insdtl-img-wrap { width: 100%; }
   .information-detail-wrapper .insight-dtl-inner .insdtl-cont .insdtl-img-wrap { width: 100%; } }
-@media (max-width: 879px) { #modal-email-modify, #modal-phone-modify { width: 30rem; } }
 
 /*# sourceMappingURL=style.css.map */
