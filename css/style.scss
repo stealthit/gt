@@ -1295,7 +1295,7 @@ button {
 
 // ** information ***********
 .ic-new{
-  width:$size-40;
+  width:$size-36;
   padding: 0 0.2rem;
   background-color: #0bc890;
   border-radius: 24px;
@@ -1304,6 +1304,7 @@ button {
   align-items: center;
   justify-content: center;
   margin-left: $size-5;
+  font-size: $size-12;
   
 }
 .information-wrapper {
@@ -1837,4 +1838,10 @@ button {
   .information-detail-wrapper .insight-dtl-inner .insdtl-cont .insdtl-img-wrap {
     width: 100%;
   }
+}
+
+@media (max-width: 879px){
+  #modal-email-modify, #modal-phone-modify {
+    width: 30rem;
+}
 }
